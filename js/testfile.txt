@@ -6,7 +6,5 @@ fas
 dfa
 sdf
 as
-dfas
-df
 asd
 
