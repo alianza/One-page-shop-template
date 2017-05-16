@@ -12,5 +12,24 @@ try {
 
     echo $e->getMessage();
 
-}
+    }
+
+        try {
+
+            $sql = "SELECT * FROM `tekst` WHERE 1";
+
+            $stmt = $db->prepare($sql);
+            $stmt->execute();
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+     } catch(PDOException $e) {
+
+            echo $e->GetMessage();
+
+        }
+
+        $title = $result['title'];
+
+    }
+
 ?>
