@@ -13,20 +13,4 @@ try {
     echo $e->getMessage();
 
 }
-
-function loginbarrier () {
-
-     echo("<div id='melding'>U moet ingelogd zijn om deze pagina weer te geven. Log <a href='index.php?page=login'>Hier</a> in!</div>");
-
-//    echo('<script>loginbarrier();</script>');
-
-}
-
-function test_input($data) {
-   $data = trim($data);
-   $data = stripslashes($data);
-   $data = htmlspecialchars($data);
-   return $data;
-}
-
 ?>
