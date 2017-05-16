@@ -1,8 +1,62 @@
+#page {
+    width: 100% + 8px;
+    margin: -8px;
+}
+
 #top_div {
     width: 100%;
+
 }
 
 #top_div_img {
     width: 100%;
 }
 
+
+#info_div_container {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f00;
+    text-align: center;
+}
+
+#v-align-helper {
+    height: 100%;
+    width: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#info_div {
+     display: inline-block;
+    vertical-align: middle;
+}
+
+#info_div1 {
+    display: inline-block;
+    width: 300px;
+}
+#info_div2 {
+    display: inline-block;
+    width: 300px;
+}
+#info_div3 {
+    display: inline-block;
+    width: 300px;
+}
+
+#order_div1 {
+    display: inline-block;
+    width: 150px;
+}
+#order_div2 {
+    display: inline-block;
+    width: 150px;
+}
+#order_div3 {
+    display: inline-block;
+    width: 150px;
+}
