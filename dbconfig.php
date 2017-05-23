@@ -51,6 +51,6 @@ try {
         }
 
 //        $header_image = "data:image/jpeg;base64," . base64_encode( $result['header_image'] );
-        $header_image = '<img id="top_div_img" src="data:image/jpeg;base64,'.base64_encode( $result['header_image'] ).'"/>';
+        $header_image = '<img id="top_div_img" src="data:image/jpeg;base64,' . base64_encode( $result['header_image'] ) . '"/>';
 
 ?>
