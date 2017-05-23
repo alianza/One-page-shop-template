@@ -34,17 +34,18 @@
     vertical-align: middle;
 }
 
-#info_div1 {
+.info_box {
     display: inline-block;
     width: 300px;
 }
-#info_div2 {
-    display: inline-block;
-    width: 300px;
-}
-#info_div3 {
-    display: inline-block;
-    width: 300px;
+
+#order_div {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
 }
 
 #order_div1 {
