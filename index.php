@@ -39,20 +39,24 @@
         </div>
 
         <!--    information about delivery: order > deliver > time/wait    -->
-        <div id="order_div">
-            <div id="order_div1">
-                <img id="order_div_img1" src="http://placehold.it/150x150">
-                <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-            </div>
+        <div id="order_div_container">
+            <div class="v-align-helper"></div>
 
-            <div id="order_div2">
-                <img id="order_div_img3" src="http://placehold.it/150x150">
-                <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-            </div>
+            <div id="order_div">
+                <div id="order_div1">
+                    <img id="order_div_img1" src="http://placehold.it/150x150">
+                    <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
 
-            <div id="order_div3">
-                <img id="order_div_img3" src="http://placehold.it/150x150">
-                <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                <div id="order_div2">
+                    <img id="order_div_img3" src="http://placehold.it/150x150">
+                    <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                </div>
+
+                <div id="order_div3">
+                    <img id="order_div_img3" src="http://placehold.it/150x150">
+                    <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                </div>
             </div>
         </div>
 
