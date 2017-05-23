@@ -1,3 +1,11 @@
+body, html {
+/*    Minimal width of site*/
+    min-width: 500px;
+}
+
+p {
+    text-align: left;
+}
 #page {
     width: 100% + 8px;
     margin: -8px;
@@ -10,8 +18,22 @@
 
 #top_div_img {
     width: 100%;
+    min-height: 150px;
+    min-width: 350px;
 }
 
+#item_discr {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+/*    Minimal width of site*/
+    min-width: 500px;
+}
+
+.item_descr_text {
+    text-align: center;
+}
 
 #info_div_container, #order_div_container {
     position: relative;
@@ -20,6 +42,17 @@
     bottom: 0;
     left: 0;
     text-align: center;
+}
+
+#info_div_container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+#order_div_container {
+        background-color: whitesmoke;
+
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 #v-align-helper {
@@ -37,6 +70,7 @@
 .info_box {
     display: inline-block;
     width: 300px;
+    vertical-align: top;
 }
 
 #order_div {
@@ -51,12 +85,17 @@
 #order_div1 {
     display: inline-block;
     width: 150px;
+    vertical-align: top;
 }
 #order_div2 {
     display: inline-block;
     width: 150px;
+    vertical-align: top;
 }
 #order_div3 {
     display: inline-block;
     width: 150px;
+    vertical-align: top;
 }
+
+
