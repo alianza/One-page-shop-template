@@ -17,10 +17,8 @@ p {
 }
 
 #top_div_img {
-    /* The image used */
-
-    /* Set a specific height */
-    min-height: 720px;
+    /* Set height to viewheight */
+    min-height: 100vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
