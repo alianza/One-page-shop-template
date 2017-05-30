@@ -72,8 +72,13 @@ p {
     display: inline-block;
     width: 300px;
     vertical-align: top;
+    margin: 5px;
 }
 
+.order_box {
+    margin: 10px;
+
+}
 #order_div {
     position: relative;
     top: 0;
@@ -81,6 +86,7 @@ p {
     bottom: 0;
     left: 0;
     text-align: center;
+
 }
 
 #order_div1 {
