@@ -27,13 +27,14 @@ p {
     text-align: center;
     top: 100px;
     width: 100%;
-/*    Minimal width of site*/
     min-width: 500px;
 }
 
 .item_descr_text {
     text-align: center;
+
 }
+
 
 #info_div_container, #order_div_container {
     position: relative;
@@ -99,8 +100,9 @@ p {
 }
 
 .order_button {
-    background-color: #000;
+    background-color: #4CAF50;
     color: #fff;
+    font-weight: bold;
     padding: 1em;
     padding-left: 2em;
     padding-right: 2em;
@@ -110,23 +112,11 @@ p {
     font-size: 100%;
     outline: 0;
 
+    transition-duration: 0.4s;
+
 }
 
 .order_button:hover {
-    background-color: lightgrey;
-}
-
-.w3-btn, .w3-button {
-    border: none;
-    display: inline-block;
-    outline: 0;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
+ background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;}
