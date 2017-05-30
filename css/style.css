@@ -81,10 +81,6 @@ p {
         background-color: rgba(0,0,0,.05);
 }
 
-.order_box {
-    margin: 10px;
-
-}
 #order_div {
     position: relative;
     top: 0;
@@ -95,20 +91,11 @@ p {
 
 }
 
-#order_div1 {
+.order_box {
     display: inline-block;
     width: 150px;
     vertical-align: top;
-}
-#order_div2 {
-    display: inline-block;
-    width: 150px;
-    vertical-align: top;
-}
-#order_div3 {
-    display: inline-block;
-    width: 150px;
-    vertical-align: top;
+    margin: 10px;
 }
 
 .order_button {
