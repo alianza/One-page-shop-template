@@ -1,6 +1,6 @@
 body, html {
 /*    Minimal width of site*/
-    min-width: 500px;
+/*    min-width: 500px;*/
 }
 
 p {
@@ -17,9 +17,16 @@ p {
 }
 
 #top_div_img {
-    width: 100%;
-    min-height: 150px;
-    min-width: 350px;
+    /* The image used */
+
+    /* Set a specific height */
+    min-height: 720px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #item_desc {
@@ -27,7 +34,7 @@ p {
     text-align: center;
     top: 100px;
     width: 100%;
-    min-width: 500px;
+/*    min-width: 500px;*/
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
