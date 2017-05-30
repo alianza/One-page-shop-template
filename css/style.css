@@ -13,7 +13,7 @@ p {
 
 #top_div {
     width: 100%;
-
+    position: relative;
 }
 
 #top_div_img {
@@ -22,15 +22,18 @@ p {
     min-width: 350px;
 }
 
-#item_descr {
+#item_desc {
     position: absolute;
     text-align: center;
     top: 100px;
     width: 100%;
     min-width: 500px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
 }
 
-.item_descr_text {
+.item_desc_text {
     text-align: center;
 
 }
