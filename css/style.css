@@ -104,7 +104,7 @@ p {
 }
 
 .order_button {
-    background-color: #4CAF50;
+    background-color: #969696;
     color: #fff;
     font-weight: bold;
     padding: 1em;
@@ -122,12 +122,12 @@ p {
 
 .order_button:hover {
  background-color: white;
-    color: #4CAF50;
-    border: 2px solid #4CAF50;
+    color: #969696;
+    border: 2px solid #969696;;
 }
 
 .order_button_big {
-    background-color: #4CAF50;
+    background-color: #969696;
     color: #fff;
     font-weight: bold;
     padding: 1em;
@@ -145,5 +145,5 @@ p {
 
 .order_button_big:hover {
  background-color: white;
-    color: #4CAF50;
-    border: 2px solid #4CAF50;}
+    color: #969696;
+    border: 2px solid #969696;}
