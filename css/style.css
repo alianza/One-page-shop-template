@@ -115,13 +115,12 @@ p {
     cursor: pointer;
     font-size: 100%;
     outline: 0;
-
     transition-duration: 0.4s;
 
 }
 
 .order_button:hover {
- background-color: white;
+    background-color: white;
     color: #969696;
     border: 2px solid #969696;;
 }
@@ -146,4 +145,30 @@ p {
 .order_button_big:hover {
  background-color: white;
     color: #969696;
-    border: 2px solid #969696;}
+    border: 2px solid #969696;
+}
+
+.footer_div {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+li {
+    display: inline;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#socialmedia {
+    text-align: center;
+}
+.footer_div {
+}
