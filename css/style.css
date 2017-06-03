@@ -171,6 +171,7 @@ li {
     display: inline;
     margin-left: 2em;
     margin-right: 2em;
+    text-decoration: none;
 }
 
 #socialmedia {
