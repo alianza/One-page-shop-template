@@ -1,6 +1,6 @@
 body, html {
 /*    Minimal width of site*/
-/*    min-width: 500px;*/
+    min-width: 375px;
 }
 
 p {
@@ -32,7 +32,8 @@ p {
     text-align: center;
     top: 100px;
     width: 100%;
-/*    min-width: 500px;*/
+/*    minimal with of site*/
+    min-width: 375px;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
@@ -55,11 +56,11 @@ p {
 
 #info_div_container {
     padding-top: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
 }
-#order_div_container {
-        background-color: whitesmoke;
 
+#order_div_container {
+    background-color: whitesmoke;
     padding-top: 3em;
     padding-bottom: 3em;
 }
