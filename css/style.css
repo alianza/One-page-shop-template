@@ -1,7 +1,10 @@
 body, html {
 /*    Minimal width of site*/
     min-width: 375px;
+    font-family: 'Open Sans', sans-serif;
+
 }
+
 
 p {
     text-align: left;
