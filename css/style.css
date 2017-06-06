@@ -166,18 +166,26 @@ p {
 ul{
     list-style-type: none;
     text-align: center;
+
 }
 li {
     display: inline;
-    margin-left: 2em;
-    margin-right: 2em;
+    padding: 1em;
     text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
 }
 
 #socialmedia {
     text-align: center;
 }
-.footer_div {
+#footer_div {
 }
 
 #copyright {
