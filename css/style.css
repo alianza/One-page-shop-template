@@ -2,7 +2,7 @@ body, html {
 /*    Minimal width of site*/
     min-width: 375px;
     font-family: 'Open Sans', sans-serif;
-
+    line-height: 1.25;
 }
 
 
@@ -63,7 +63,7 @@ p {
 
 #order_div_container {
     background-color: whitesmoke;
-    padding-top: 3em;
+    padding-top: 1em;
     padding-bottom: 3em;
 }
 
@@ -184,9 +184,15 @@ a:visited {
     color: black;
 }
 
-#socialmedia {
+#socialmedia_div {
     text-align: center;
 }
+
+.socialmedia_icon {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
 #footer_div {
 }
 
