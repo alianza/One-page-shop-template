@@ -3,7 +3,7 @@
 <html>
 	<head>
         <?php include("dbconfig.php") ?>
-		<title>Onepage 2.0</title>
+		<title>Onepage</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href=".//css/style.css">
