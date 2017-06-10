@@ -19,7 +19,7 @@
         <div id="top_div">
             <div id="top_div_img" style="background-image: url('data:image/jpeg;base64,<?php echo($header_image); ?>');"> </div>
             <div id="item_desc">
-                <h1>Lorem ipsum dolor</h1>
+                <h1><?php echo($title); ?></h1>
                 <p class="item_desc_text">consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
                 <button class="order_button">Order now $6,99</button>
             </div>
