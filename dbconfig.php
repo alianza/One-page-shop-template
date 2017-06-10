@@ -1,5 +1,7 @@
 <?php
 
+$template_ID = 1;
+
 DEFINE("DB_USER", "root");
 DEFINE("DB_PASS", "");
 
@@ -18,7 +20,7 @@ try {
 
         try {
 
-            $sql = "SELECT * FROM `text` WHERE 1";
+            $sql = "SELECT * FROM `text` WHERE id = 1";
 
             $stmt = $db->prepare($sql);
             $stmt->execute();
@@ -31,14 +33,14 @@ try {
         }
 
         $title = $result['title'];
-        $small_description = $result['small_desc'];
-        $large_description = $result['large_desc'];
+        $small_description = $result['desc_text'];
+        $large_description = $result['order_button'];
 
 //get Images
 
 try {
 
-            $sql = "SELECT * FROM `images` WHERE 1";
+            $sql = "SELECT * FROM `images` WHERE id = 1";
 
             $stmt = $db->prepare($sql);
             $stmt->execute();
