@@ -14,7 +14,7 @@
         <div id="page">
         <!--   Big image of product with text     -->
         <div id="top_div">
-            <h1><?php echo $header_image ?></h1>
+            <img id="top_div_img" src="data:image/jpeg;base64,<?php echo($header_image); ?>"/>
             <div class="v-align-helper"></div>
             <div id="item_descr">
             <h1><?php echo $title ?></h1>
