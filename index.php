@@ -17,14 +17,12 @@
         <div id="page">
         <!--   Big image of product with text     -->
         <div id="top_div">
-            <img id="top_div_img" src="data:image/jpeg;base64,<?php echo($header_image); ?>"/>
+            <div id="top_div_img" style="background-image: url(data:image/jpeg;base64,<?php echo($header_image); ?>);"> </div>
             <div id="item_desc">
                 <h1><?php echo $title ?></h1>
                 <p class="item_desc_text">consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                <button class="order_button"><?php echo($order_button_text) ?></button><button class="order_button">Read more</button>
-
-
-
+                <button class="order_button"><?php echo($order_button_text) ?></button>
+                <button class="order_button">Read more</button>
             </div>
             <div class="v-align-helper"></div>
         </div>
@@ -72,7 +70,7 @@
 
                 <div id="products_box2" class="products_box">
                     <img id="products_div_img3" src="http://placehold.it/150x150">
-                    <p class="product_small_desc">L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                    <p class="product_small_desc">L Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     <button class="item_order_button">2m $18,99</button>
                 </div>
 
@@ -84,7 +82,7 @@
 
                 <div id="products_box4" class="products_box">
                     <img id="products_div_img4" src="http://placehold.it/150x150">
-                    <p class="product_small_desc">L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                    <p class="product_small_desc">L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     <button class="item_order_button">10m $79,99</button>
                 </div>
 
