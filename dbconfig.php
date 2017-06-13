@@ -34,7 +34,7 @@ try {
 
         $title = $result['title'];
         $small_description = $result['desc_text'];
-        $large_description = $result['order_button'];
+        $order_button_text = $result['order_button'];
 
 //get Images
 
