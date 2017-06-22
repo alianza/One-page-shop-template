@@ -108,14 +108,24 @@ p, h1, h2, li{
     transition: all .25s;
     z-index: 0;
 }
+
 .info_box:hover{
-    background-color: rgba(204, 204, 204, 1);
-    transition: all .25s;
-    transform: scale(1.2);
-    /* margin-top: -30px; */
-    box-shadow: 0px 0px 50px 0px #000000;
-    z-index: 10;
+        background-color: #cccccc;
+    }
+
+@media (min-width: 400px) {
+
+    .info_box:hover{
+        background-color: #cccccc;
+        transition: all .25s;
+        transform: scale(1.2);
+        /* margin-top: -30px; */
+        box-shadow: 0px 0px 50px 0px #333;
+        z-index: 10;
+    }
 }
+
+
 
 #order_div, #products_div {
     position: relative;
