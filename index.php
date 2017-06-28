@@ -2,14 +2,12 @@
 
 <html>
 	<head>
-        <?php include("dbconfig.php") ?>
 		<title>Onepage</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href=".//css/style.css">
-
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+        <?php include("dbconfig.php") ?>
 	</head>
 
 	<body>
@@ -25,9 +23,6 @@
             </div>
             <div class="v-align-helper"></div>
         </div>
-
-
-
 
         <!--   Information about the 3 main features of product     -->
         <div id="info_div_container">
