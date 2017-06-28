@@ -18,8 +18,8 @@
             <div id="top_div_img" style="background-image: url('data:image/jpeg;base64,<?php echo($header_image); ?>');"> </div>
             <div id="item_desc">
                 <h1><?php echo($title); ?></h1>
-                <p class="item_desc_text">consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                <button class="order_button">Order now $6,99</button>
+                <p class="item_desc_text"><?php echo($desc_text); ?></p>
+                <button class="order_button"><?php echo($order_button); ?></button>
             </div>
             <div class="v-align-helper"></div>
         </div>
@@ -28,22 +28,22 @@
         <div id="info_div_container">
             <div class="v-align-helper"></div>
 
-            <h2>Features</h2>
+            <h2><?php echo($top_small_title); ?></h2>
 
             <div id="info_div">
             <div id="info_div1" class="info_box">
                 <img id="info_div_img1" src="http://placehold.it/300x150">
-                <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, </p>
+                <p><?php echo($large_desc_1); ?></p>
             </div>
 
             <div id="info_div2" class="info_box">
                 <img id="info_div_img2" src="http://placehold.it/300x150">
-                <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+                <p><?php echo($large_desc_2); ?></p>
             </div>
 
             <div id="info_div3" class="info_box">
                 <img id="info_div_img3" src="http://placehold.it/300x150">
-                <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo</p>
+                <p><?php echo($large_desc_3); ?></p>
             </div>
         </div>
         </div>
@@ -52,27 +52,27 @@
         <div id="order_div_container">
             <div class="v-align-helper"></div>
 
-            <h2>Delivery</h2>
+            <h2><?php echo($bottom_small_title); ?></h2>
 
             <div id="order_div">
                 <div id="order_box1"  class="order_box">
                     <img id="order_div_img1" src="http://placehold.it/150x150">
-                    <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <p><?php echo($small_desc_1); ?></p>
                 </div>
 
                 <div id="order_box2" class="order_box">
                     <img id="order_div_img3" src="http://placehold.it/150x150">
-                    <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                    <p><?php echo($small_desc_2); ?></p>
                 </div>
 
                 <div id="order_box3" class="order_box">
                     <img id="order_div_img3" src="http://placehold.it/150x150">
-                    <p>L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                    <p><?php echo($small_desc_3); ?></p>
                 </div>
             </div>
 
             <div id="order_button_big_remind">
-                <button class="order_button_big">Order now $6,99</button>
+                <button class="order_button_big"><?php echo($order_button); ?></button>
             </div>
         </div>
 
