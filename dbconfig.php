@@ -7,7 +7,7 @@ DEFINE("DB_PASS", "DamsCommerce12");
 
 try {
 
-    $db = new PDO("mysql:host=localhost:;dbname=onepage",DB_USER,DB_PASS);
+    $db = new PDO("mysql:host=localhost:3306;dbname=onepage",DB_USER,DB_PASS);
     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 } catch (PDOException $e) {
