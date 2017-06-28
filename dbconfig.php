@@ -3,7 +3,7 @@
 $template_ID = 1;
 
 DEFINE("DB_USER", "database_admin");
-DEFINE("DB_PASS", md5("5b922b35d5c82c68a5091a908de83965"));
+DEFINE("DB_PASS", "DamsCommerce12");
 
 try {
 
