@@ -2,12 +2,12 @@
 
 $template_ID = 1;
 
-DEFINE("DB_USER", "root");
-DEFINE("DB_PASS", "");
+DEFINE("DB_USER", "database_admin");
+DEFINE("DB_PASS", md5("5b922b35d5c82c68a5091a908de83965"));
 
 try {
 
-    $db = new PDO("mysql:host=localhost;dbname=onepage",DB_USER,DB_PASS);
+    $db = new PDO("mysql:host=localhost:;dbname=onepage",DB_USER,DB_PASS);
     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 } catch (PDOException $e) {
