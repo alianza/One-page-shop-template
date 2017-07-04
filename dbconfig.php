@@ -1,9 +1,10 @@
 <?php
 
-$template_ID = 1;
+//Only the next 3 lines of code should ever be changed by a non-developer
 
+$onepage_ID = 1;
 DEFINE("DB_USER", "database_admin");
-DEFINE("DB_PASS", "DamsCommerce12");
+DEFINE  ("DB_PASS", "DamsCommerce12");
 
 try {
 
@@ -18,9 +19,9 @@ try {
 
 //Get Text
 
-        try {
+try {
 
-            $sql = "SELECT * FROM `text` WHERE id = 1";
+            $sql = "SELECT * FROM `text` WHERE id = $onepage_ID";
 
             $stmt = $db->prepare($sql);
             $stmt->execute();
@@ -48,13 +49,14 @@ try {
 
 try {
 
-            $sql = "SELECT * FROM `images` WHERE id = $template_ID";
+            $sql = "SELECT * FROM `images` WHERE id = $onepage_ID";
 
             $stmt = $db->prepare($sql);
             $stmt->execute();
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
   //        $header_image = "data:image/jpeg;base64," . base64_encode( $result['header_image'] );
+
             $header_image = base64_encode($result['header_image']);
             $image_1 = base64_encode($result['image_1']);
             $image_2 = base64_encode($result['image_2']);
