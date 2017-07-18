@@ -1,8 +1,12 @@
-body, html {
+body {
 /*    Minimal width of site*/
 /*    min-width: 375px;*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     line-height: 1.25;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 p {
@@ -43,11 +47,13 @@ p, h1, h2, li{
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    max-width: 65%;
 }
 
 .item_desc_text {
     text-align: center;
-
+    text-align: center;
+    font-size: 24px;
 }
 
 
@@ -148,7 +154,7 @@ p, h1, h2, li{
 }
 
 .order_button {
-    background-color: #969696;
+    background-color: #3da540;
     color: #fff;
     font-weight: bold;
     padding: 1em;
@@ -160,12 +166,15 @@ p, h1, h2, li{
     font-size: 100%;
     outline: 0;
     transition-duration: 0.4s;
+    border-style: none;
+    max-width: 680px;
+    min-width: 340px;
+    width: 70%;
 }
 
 .order_button:hover {
-    background-color: white;
-    color: #969696;
-    border: 2px solid #969696;;
+    background-color: #4caf50;
+    color: #fff;
 }
 
 .order_button_big {
@@ -232,7 +241,6 @@ a:visited {
 }
 
 #footer_div {
-    background-color: whitesmoke;
     padding-top: 1em;
 }
 #footer_company {
@@ -264,40 +272,6 @@ a:visited {
     width: 100%;
 }
 
-.item_order_button:hover {
-    background-color: white;
-    color: #969696;
-    border: 2px solid #969696;;
-}
-
-/* Dropdown Button
-bron: https://www.w3schools.com/howto/howto_css_dropdown.asp
-*/
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
@@ -306,23 +280,9 @@ bron: https://www.w3schools.com/howto/howto_css_dropdown.asp
     display: block;
 }
 
-.dropdown {
-    margin: 10px;
-}
-
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #f1f1f1
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
 }
 
 ::-webkit-scrollbar {
@@ -336,4 +296,35 @@ bron: https://www.w3schools.com/howto/howto_css_dropdown.asp
 ::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
+}
+
+.item_title {
+    font-weight: bolder;
+    font-size: 64px;
+}
+
+.section_title {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.refer_button {
+    background-color: #353535;
+    color: #fff;
+    font-weight: bold;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 100%;
+    outline: 0;
+    transition-duration: 0.4s;
+    border-style: none;
+}
+
+.refer_button:hover {
+    background-color: #000000;
+    color: #fff;
 }
