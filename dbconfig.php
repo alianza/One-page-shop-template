@@ -65,6 +65,7 @@ try {
             $misc_image_1 = "data:image/jpeg;base64," . base64_encode($result['misc_image_1']);
             $misc_image_2 = "data:image/jpeg;base64," . base64_encode($result['misc_image_2']);
             $misc_image_3 = "data:image/jpeg;base64," . base64_encode($result['misc_image_3']);
+            $misc_image_4 = "data:image/jpeg;base64," . base64_encode($result['misc_image_4']);
 
      } catch(PDOException $e) {
 
