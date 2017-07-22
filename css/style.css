@@ -109,7 +109,9 @@ p, h1, h2, li{
 }
 
 .product_small_desc {
-    height: 150px;
+    height: auto;
+    max-height: 150px;
+    padding-bottom: 1px;
     overflow-x: auto;
     overflow-y: auto;
     word-wrap: break-word;
