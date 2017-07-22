@@ -252,6 +252,7 @@ a:visited {
     width: 48px;
     height: auto;
     transition: all 0.5s;
+    margin: 0px 25px 0px 25px;
 }
 
 .socialmedia_icon:hover {
