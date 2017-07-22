@@ -45,9 +45,11 @@ p, h1, h2, li{
     top: 50%;
     max-width: 90%;
 }
+
 .item_desc_text {
     text-align: center;
     font-size: 18px;
+    font-weight: bolder;
 }
 
 .item_title {
@@ -186,6 +188,7 @@ p, h1, h2, li{
     .item_desc_text {
         text-align: center;
         font-size: 24px;
+        font-weight: bolder;
     }
 
     .item_title {
