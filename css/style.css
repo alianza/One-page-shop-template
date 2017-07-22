@@ -50,11 +50,14 @@ p, h1, h2, li{
     text-align: center;
     font-size: 18px;
     font-weight: bolder;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .item_title {
+    text-align: center;
     font-weight: bolder;
     font-size: 48px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .order_button {
@@ -189,11 +192,14 @@ p, h1, h2, li{
         text-align: center;
         font-size: 24px;
         font-weight: bolder;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     }
 
     .item_title {
+        text-align: center;
         font-weight: bolder;
         font-size: 64px;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     }
 
 }
@@ -228,9 +234,17 @@ p, h1, h2, li{
 }
 
 @media (max-width: 600px) {
+
     .link_list_item {
-  display: block;
+        display: block;
     }
+
+    #copyright {
+        margin-left: 8px;
+        margin-top: 25px !important;
+        text-align: center !important;
+    }
+
 }
 
 a {
@@ -266,8 +280,10 @@ a:visited {
 }
 
 #copyright {
-    margin-left: 8px;
-}
+        margin-left: 8px;
+        margin-top: 0px;
+        text-align: left;
+    }
 
 .link:hover {
     text-decoration: underline;
