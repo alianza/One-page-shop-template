@@ -1,6 +1,4 @@
 body, html {
-/*    Minimal width of site*/
-/*    min-width: 375px;*/
     font-family: 'Open Sans', sans-serif;
     line-height: 1.25;
 }
@@ -40,8 +38,6 @@ p, h1, h2, li{
     text-align: center;
     top: 100px;
     width: 100%;
-/*    minimal with of site*/
-/*    min-width: 375px;*/
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
