@@ -250,8 +250,8 @@ a:visited {
 }
 
 .socialmedia_icon:hover {
-    transition: all 0.5s;
     opacity: 0.8;
+    transition: all 0.5s;
 }
 
 .footer_div {
