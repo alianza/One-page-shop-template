@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif !important;
     line-height: 1.25;
+    margin: 0;
 }
 
 * {
@@ -13,10 +14,6 @@ p {
 
 p, h1, h2, li{
         color: #333;
-}
-
-#page {
-    margin: -8px;
 }
 
 #top_div {
