@@ -139,7 +139,7 @@ p, h1, h2, li{
         background-color: #cccccc;
     }
 
-@media (min-width: 400px) {
+@media screen and (min-width: 400px) and (min-height: 400px){
 
     .order_button {
         background-color: #3da540;
