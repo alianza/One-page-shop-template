@@ -84,7 +84,7 @@
         <!--    Footer    -->
         <div class="footer_div">
             <div id='footer_company'>
-                <ul>
+                <ul class="links_list">
                     <li class="link_list_item"><a class="link" href="<?php echo($more_products_link); ?>">MORE PRODUCTS</a></li>
                     <li class="link_list_item"><a class="link" href="<?php echo($about_us_link); ?>">ABOUT US</a></li>
                     <li class="link_list_item"><a class="link" href="<?php echo($contact_link); ?>">CONTACT</a></li>
