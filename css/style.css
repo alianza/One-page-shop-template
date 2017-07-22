@@ -42,20 +42,42 @@ p, h1, h2, li{
     text-align: center;
     top: 100px;
     width: 100%;
-/*    minimal with of site*/
-/*    min-width: 375px;*/
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-    max-width: 65%;
+    max-width: 90%;
 }
-
 .item_desc_text {
     text-align: center;
-    text-align: center;
-    font-size: 24px;
+    font-size: 18px;
 }
 
+.item_title {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.order_button {
+    background-color: #3da540;
+    color: #fff;
+    font-weight: bold;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 100%;
+    outline: 0;
+    transition-duration: 0.4s;
+    border-style: none;
+    width: 85%;
+}
+
+.order_button:hover {
+    background-color: #4caf50;
+    color: #fff;
+}
 
 #info_div_container, #order_div_container, #products_div_container {
     position: relative;
@@ -120,14 +142,60 @@ p, h1, h2, li{
 
 @media (min-width: 400px) {
 
+    .order_button {
+        background-color: #3da540;
+        color: #fff;
+        font-weight: bold;
+        padding: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        font-size: 100%;
+        outline: 0;
+        transition-duration: 0.4s;
+        border-style: none;
+        max-width: 680px;
+        min-width: 340px;
+        width: 70%;
+    }
+
+    .order_button:hover {
+        background-color: #4caf50;
+        color: #fff;
+    }
+
+
     .info_box:hover{
         background-color: #cccccc;
         transition: all .25s;
         transform: scale(1.2);
-        /* margin-top: -30px; */
         box-shadow: 0px 0px 50px 0px #333;
         z-index: 10;
     }
+
+    #item_desc {
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        max-width: 75%;
+    }
+
+    .item_desc_text {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .item_title {
+        font-weight: bolder;
+        font-size: 64px;
+    }
+
 }
 
 #order_div, #products_div {
@@ -153,51 +221,6 @@ p, h1, h2, li{
     margin: 10px;
 }
 
-.order_button {
-    background-color: #3da540;
-    color: #fff;
-    font-weight: bold;
-    padding: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    font-size: 100%;
-    outline: 0;
-    transition-duration: 0.4s;
-    border-style: none;
-    max-width: 680px;
-    min-width: 340px;
-    width: 70%;
-}
-
-.order_button:hover {
-    background-color: #4caf50;
-    color: #fff;
-}
-
-.order_button_big {
-    background-color: #969696;
-    color: #fff;
-    font-weight: bold;
-    padding: 1em;
-    padding-left: 30%;
-    padding-right: 30%;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    font-size: 100%;
-    outline: 0;
-    transition-duration: 0.4s;
-}
-
-.order_button_big:hover {
- background-color: white;
-    color: #969696;
-    border: 2px solid #969696;
-}
-
 .footer_div {
     position: relative;
     top: 0;
@@ -219,7 +242,7 @@ ul {
     color: #333;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .link_list_item {
   display: block;
     }
@@ -238,6 +261,8 @@ a:visited {
 }
 
 .socialmedia_icon {
+    width: 48px;
+    height: auto;
 }
 
 #footer_div {
@@ -255,36 +280,6 @@ a:visited {
     text-decoration: underline;
 }
 
-/*Product variations order buttons*/
-.item_order_button {
-    background-color: #969696;
-    color: #fff;
-    font-weight: bold;
-    padding: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    font-size: 100%;
-    outline: 0;
-    transition-duration: 0.4s;
-    width: 100%;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -296,11 +291,6 @@ a:visited {
 ::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
-}
-
-.item_title {
-    font-weight: bolder;
-    font-size: 64px;
 }
 
 .section_title {
