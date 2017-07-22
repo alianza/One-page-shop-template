@@ -261,6 +261,12 @@ a:visited {
 .socialmedia_icon {
     width: 48px;
     height: auto;
+    transition: all 0.5s;
+}
+
+.socialmedia_icon:hover {
+    transition: all 0.5s;
+    opacity: 0.85;
 }
 
 #footer_div {
