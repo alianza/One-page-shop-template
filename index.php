@@ -87,16 +87,16 @@
                 <ul>
                     <li class="link_list_item"><a class="link" href="<?php echo($more_products_link); ?>">MORE PRODUCTS</a></li>
                     <li class="link_list_item"><a class="link" href="<?php echo($about_us_link); ?>">ABOUT US</a></li>
-                    <li class="link_list_item"><a class="link" href="<?php echo(contact_link); ?>">CONTACT</a></li>
-                    <li class="link_list_item"><a class="link" href="<?php echo(faqs_link); ?>">FAQS</a></li>
+                    <li class="link_list_item"><a class="link" href="<?php echo($contact_link); ?>">CONTACT</a></li>
+                    <li class="link_list_item"><a class="link" href="<?php echo($faqs_link); ?>">FAQS</a></li>
                 </ul>
             </div>
 
 
             <div id='socialmedia_div'>
                 <img class="socialmedia_icon" href="<?php echo($social_link_1); ?>" src="<?php echo($social_image_1); ?>">
-                <img class="socialmedia_icon" href="<?php echo($social_link_2); ?>"src="<?php echo($social_image_2); ?>">
-                <img class="socialmedia_icon" href="<?php echo($social_link_3); ?>"src="<?php echo($social_image_3); ?>">
+                <img class="socialmedia_icon" href="<?php echo($social_link_2); ?>" src="<?php echo($social_image_2); ?>">
+                <img class="socialmedia_icon" href="<?php echo($social_link_3); ?>" src="<?php echo($social_image_3); ?>">
             </div>
 
             <div id='copyright'>&copy; Copyright DamsCommerce</div>
