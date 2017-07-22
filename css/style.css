@@ -302,6 +302,7 @@ a:visited {
     outline: 0;
     transition-duration: 0.4s;
     border-style: none;
+    margin-bottom: 5px;
 }
 
 .refer_button:hover {
