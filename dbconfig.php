@@ -31,12 +31,12 @@ try {
             $title = $result['title'];
             $desc_text = $result['desc_text'];
             $order_button = $result['order_button'];
-            $order_button = $result['refer_button'];
-            $top_small_title = $result['top_small_title'];
+            $refer_button = $result['refer_button'];
+            $small_title_1 = $result['small_title_1'];
             $large_desc_1 = $result['large_desc_1'];
             $large_desc_2 = $result['large_desc_2'];
             $large_desc_3 = $result['large_desc_3'];
-            $buttom_small_title = $result['buttom_small_title'];
+            $small_title_2 = $result['small_title_2'];
             $small_desc_1 = $result['small_desc_1'];
             $small_desc_2 = $result['small_desc_2'];
             $small_desc_3 = $result['small_desc_3'];
