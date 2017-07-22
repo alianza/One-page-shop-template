@@ -1,8 +1,9 @@
 <?php
 
-//Only the next 3 lines of code should ever be changed by a non-developer
+//Only the next 4 lines of code should ever be changed by a non-developer
 
 $onepage_ID = 1;
+$global_ID = 1;
 DEFINE("DB_USER", "database_admin");
 DEFINE  ("DB_PASS", "DamsCommerce12");
 
@@ -30,6 +31,7 @@ try {
             $title = $result['title'];
             $desc_text = $result['desc_text'];
             $order_button = $result['order_button'];
+            $order_button = $result['refer_button'];
             $top_small_title = $result['top_small_title'];
             $large_desc_1 = $result['large_desc_1'];
             $large_desc_2 = $result['large_desc_2'];
@@ -55,15 +57,41 @@ try {
             $stmt->execute();
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-  //        $header_image = "data:image/jpeg;base64," . base64_encode( $result['header_image'] );
+            $header_image = "data:image/jpeg;base64," . base64_encode($result['header_image']);
+            $feature_image_1 = "data:image/jpeg;base64," . base64_encode($result['feature_image_1']);
+            $feature_image_2 = "data:image/jpeg;base64," . base64_encode($result['feature_image_2']);
+            $feature_image_3 = "data:image/jpeg;base64," . base64_encode($result['feature_image_3']);
+            $misc_image_1 = "data:image/jpeg;base64," . base64_encode($result['misc_image_1']);
+            $misc_image_2 = "data:image/jpeg;base64," . base64_encode($result['misc_image_2']);
+            $misc_image_3 = "data:image/jpeg;base64," . base64_encode($result['misc_image_3']);
 
-            $header_image = base64_encode($result['header_image']);
-            $image_1 = base64_encode($result['image_1']);
-            $image_2 = base64_encode($result['image_2']);
-            $image_3 = base64_encode($result['image_3']);
-            $misc_image_1 = base64_encode($result['misc_image_1']);
-            $misc_image_2 = base64_encode($result['misc_image_2']);
-            $misc_image_3 = base64_encode($result['misc_image_3']);
+     } catch(PDOException $e) {
+
+            echo $e->GetMessage();
+
+    }
+
+//get global onepage social info and images
+
+try {
+
+            $sql = "SELECT * FROM `global` WHERE id = $global_ID";
+
+            $stmt = $db->prepare($sql);
+            $stmt->execute();
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            $more_products_link = $result['more_products_link'];
+            $about_us_link = $result['about_us_link'];
+            $contact_link = $result['contact_link'];
+            $faqs_link = $result['faqs_link'];
+            $social_image_1 = "data:image/jpeg;base64," . base64_encode($result['social_image_1']);
+            $social_image_2 = "data:image/jpeg;base64," . base64_encode($result['social_image_2']);
+            $social_image_3 = "data:image/jpeg;base64," . base64_encode($result['social_image_3']);
+            $social_link_1 = $result['social_link_1'];
+            $social_link_2 = $result['social_link_2'];
+            $social_link_3 = $result['social_link_3'];
+
 
      } catch(PDOException $e) {
 
