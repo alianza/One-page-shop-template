@@ -189,7 +189,10 @@ p, h1, h2, li{
     .item_desc_text {
         font-size: 24px;
         font-weight: bolder;
+<<<<<<< HEAD
         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+=======
+>>>>>>> One-page-shop-template/Template_2.0
     }
 
     .item_title {
