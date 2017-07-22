@@ -47,14 +47,15 @@ p, h1, h2, li{
 }
 
 .item_desc_text {
-    text-align: center;
     font-size: 18px;
     font-weight: bolder;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .item_title {
     font-weight: bolder;
     font-size: 48px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .order_button {
@@ -186,14 +187,15 @@ p, h1, h2, li{
     }
 
     .item_desc_text {
-        text-align: center;
         font-size: 24px;
         font-weight: bolder;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     }
 
     .item_title {
         font-weight: bolder;
         font-size: 64px;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     }
 
 }
