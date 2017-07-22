@@ -40,6 +40,7 @@ try {
             $small_desc_1 = $result['small_desc_1'];
             $small_desc_2 = $result['small_desc_2'];
             $small_desc_3 = $result['small_desc_3'];
+            $small_desc_4 = $result['small_desc_4'];
 
      } catch(PDOException $e) {
 
