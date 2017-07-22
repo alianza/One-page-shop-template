@@ -33,17 +33,17 @@
 
             <div id="info_div">
             <div id="info_div1" class="info_box">
-                <img id="info_div_img1" src="<?php echo($feature_image_1); ?>">
+                <img class="info_div_img" src="<?php echo($feature_image_1); ?>">
                 <p><?php echo($large_desc_1); ?></p>
             </div>
 
             <div id="info_div2" class="info_box">
-                <img id="info_div_img2" src="<?php echo($feature_image_2); ?>">
+                <img class="info_div_img" src="<?php echo($feature_image_2); ?>">
                 <p><?php echo($large_desc_2); ?></p>
             </div>
 
             <div id="info_div3" class="info_box">
-                <img id="info_div_img3" src="<?php echo($feature_image_3); ?>">
+                <img class="info_div_img" src="<?php echo($feature_image_3); ?>">
                 <p><?php echo($large_desc_3); ?></p>
             </div>
 
@@ -58,22 +58,22 @@
 
             <div id="products_div">
                 <div id="product_box1"  class="products_box">
-                    <img id="products_div_img1" src="<?php echo($misc_image_1); ?>">
+                    <img class="products_div_img" src="<?php echo($misc_image_1); ?>">
                     <p class="product_small_desc"><?php echo($small_desc_1); ?></p>
                 </div>
 
                 <div id="products_box2" class="products_box">
-                    <img id="products_div_img3" src="<?php echo($misc_image_2); ?>">
+                    <img class="products_div_img" src="<?php echo($misc_image_2); ?>">
                     <p class="product_small_desc"><?php echo($small_desc_2); ?></p>
                 </div>
 
                 <div id="products_box3" class="products_box">
-                    <img id="products_div_img3" src="<?php echo($misc_image_3); ?>">
+                    <img class="products_div_img" src="<?php echo($misc_image_3); ?>">
                     <p class="product_small_desc"><?php echo($small_desc_3); ?></p>
                 </div>
 
                 <div id="products_box4" class="products_box">
-                    <img id="products_div_img4" src="<?php echo($misc_image_4); ?>">
+                    <img class="products_div_img" src="<?php echo($misc_image_4); ?>">
                     <p class="product_small_desc"><?php echo($small_desc_4); ?></p>
                 </div>
 
@@ -82,7 +82,7 @@
             </div>
 
         <!--    Footer    -->
-        <div id="footer_div">
+        <div class="footer_div">
             <div id='footer_company'>
                 <ul>
                     <li class="link_list_item"><a class="link" href="<?php echo($more_products_link); ?>">MORE PRODUCTS</a></li>
