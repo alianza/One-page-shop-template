@@ -202,11 +202,6 @@ p, h1, h2, li{
         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     }
 
-    #copyright {
-    margin-left: 8px;
-    }
-
-
 }
 
 #products_div {
@@ -239,9 +234,17 @@ p, h1, h2, li{
 }
 
 @media (max-width: 600px) {
+
     .link_list_item {
-  display: block;
+        display: block;
     }
+
+    #copyright {
+        margin-left: 8px;
+        margin-top: 25px !important;
+        text-align: center !important;
+    }
+
 }
 
 a {
@@ -277,10 +280,10 @@ a:visited {
 }
 
 #copyright {
-    margin-left: 8px;
-    margin-top: 25px;
-    text-align: center;
-}
+        margin-left: 8px;
+        margin-top: 0px;
+        text-align: left;
+    }
 
 .link:hover {
     text-decoration: underline;
