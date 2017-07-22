@@ -78,7 +78,7 @@
                 </div>
 
             </div>
-                <a href=""><button class="order_button"><?php echo($order_button); ?></button></a>
+                <a href="<?php echo($order_button_link); ?>"><button class="order_button"><?php echo($order_button); ?></button></a>
             </div>
 
         <!--    Footer    -->

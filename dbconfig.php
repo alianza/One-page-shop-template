@@ -30,8 +30,9 @@ try {
 
             $title = $result['title'];
             $desc_text = $result['desc_text'];
-            $order_button = $result['order_button'];
             $refer_button = $result['refer_button'];
+            $order_button = $result['order_button'];
+            $order_button_link = $result['order_button_link'];
             $small_title_1 = $result['small_title_1'];
             $large_desc_1 = $result['large_desc_1'];
             $large_desc_2 = $result['large_desc_2'];
