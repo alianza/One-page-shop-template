@@ -32,17 +32,17 @@
 
             <div id="info_div">
             <div id="info_div1" class="info_box">
-                <img id="info_div_img1" src="http://placehold.it/300x150">
+                <img id="info_div_img1" src="https://placehold.it/300x150">
                 <p><?php echo($large_desc_1); ?></p>
             </div>
 
             <div id="info_div2" class="info_box">
-                <img id="info_div_img2" src="http://placehold.it/300x150">
+                <img id="info_div_img2" src="https://placehold.it/300x150">
                 <p><?php echo($large_desc_2); ?></p>
             </div>
 
             <div id="info_div3" class="info_box">
-                <img id="info_div_img3" src="http://placehold.it/300x150">
+                <img id="info_div_img3" src="https://placehold.it/300x150">
                 <p><?php echo($large_desc_3); ?></p>
             </div>
         </div>
@@ -56,17 +56,17 @@
 
             <div id="order_div">
                 <div id="order_box1"  class="order_box">
-                    <img id="order_div_img1" src="http://placehold.it/150x150">
+                    <img id="order_div_img1" src="https://placehold.it/150x150">
                     <p><?php echo($small_desc_1); ?></p>
                 </div>
 
                 <div id="order_box2" class="order_box">
-                    <img id="order_div_img3" src="http://placehold.it/150x150">
+                    <img id="order_div_img3" src="https://placehold.it/150x150">
                     <p><?php echo($small_desc_2); ?></p>
                 </div>
 
                 <div id="order_box3" class="order_box">
-                    <img id="order_div_img3" src="http://placehold.it/150x150">
+                    <img id="order_div_img3" src="https://placehold.it/150x150">
                     <p><?php echo($small_desc_3); ?></p>
                 </div>
             </div>
@@ -89,9 +89,9 @@
 
 
             <div id='socialmedia_div'>
-                <img class="socialmedia_icon" src="http://placehold.it/45x45">
-                <img class="socialmedia_icon" src="http://placehold.it/45x45">
-                <img class="socialmedia_icon" src="http://placehold.it/45x45">
+                <img class="socialmedia_icon" src="https://placehold.it/45x45">
+                <img class="socialmedia_icon" src="https://placehold.it/45x45">
+                <img class="socialmedia_icon" src="httpss://placehold.it/45x45">
             </div>
 
             <div id='copyright'>&copy; Copyright DamsCommerce</div>
