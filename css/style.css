@@ -160,7 +160,7 @@ p, h1, h2, li{
         border-style: none;
         max-width: 680px;
         min-width: 340px;
-        width: 70%;
+        width: 80%;
     }
 
     .order_button:hover {
