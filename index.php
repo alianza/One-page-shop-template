@@ -94,9 +94,9 @@
 
 
             <div id='socialmedia_div'>
-                <img class="socialmedia_icon" href="<?php echo($social_link_1); ?>" src="<?php echo($social_image_1); ?>">
-                <img class="socialmedia_icon" href="<?php echo($social_link_2); ?>" src="<?php echo($social_image_2); ?>">
-                <img class="socialmedia_icon" href="<?php echo($social_link_3); ?>" src="<?php echo($social_image_3); ?>">
+                <a href="<?php echo($social_link_1); ?>"><img class="socialmedia_icon" src="<?php echo($social_image_1); ?>"></a>
+                <a href="<?php echo($social_link_2); ?>"><img class="socialmedia_icon" src="<?php echo($social_image_2); ?>"></a>
+                <a href="<?php echo($social_link_3); ?>"><img class="socialmedia_icon" src="<?php echo($social_image_3); ?>"></a>
             </div>
 
             <div id='copyright'>&copy; Copyright DamsCommerce</div>
