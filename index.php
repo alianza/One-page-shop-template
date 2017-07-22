@@ -19,8 +19,8 @@
             <div id="item_desc">
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>
-                <a href="#features"><button class="refer_button"><?php echo($refer_button); ?></button></a>
-                <a href="#products"><button class="refer_button"><?php echo($order_button); ?></button></a>
+                <a href="#info_div_container"><button class="refer_button"><?php echo($refer_button); ?></button></a>
+                <a href="#products_div_container"><button class="refer_button"><?php echo($order_button); ?></button></a>
             </div>
             <div class="v-align-helper"></div>
         </div>
