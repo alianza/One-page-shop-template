@@ -258,8 +258,8 @@ p, h1, h2, li{
 .links_list {
     list-style-type: none;
     text-align: center;
-
 }
+
 .link_list_item {
     display: inline;
     padding: 1em;
@@ -271,6 +271,12 @@ p, h1, h2, li{
 
     .link_list_item {
         display: block;
+    }
+
+    .links_list {
+        list-style-type: none;
+        text-align: center;
+        margin: 0px 0px 10px 0px;
     }
 
     #copyright {
