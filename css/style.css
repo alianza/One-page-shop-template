@@ -354,7 +354,7 @@ a:visited {
 
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
 
     .info_box {
         display: inline-block;
