@@ -2,12 +2,12 @@
 
 <html>
 	<head>
-		<title>Onepage</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href=".//css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <?php include("dbconfig.php") ?>
+        <title><?php echo($title); ?></title>
 	</head>
 
 	<body>
