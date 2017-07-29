@@ -6,7 +6,7 @@
 		<meta name="viewport" content="initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href=".//css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href="<?php echo($favicon); ?>"/>
+        <link rel="shortcut icon" type="image/png" href="<?php echo($favicon); ?>"/>
         <?php include("dbconfig.php") ?>
         <title><?php echo($title); ?></title>
 	</head>
@@ -16,7 +16,7 @@
         <div id="page">
         <!--   Big image of product with text     -->
         <div id="top_div">
-            <div id="top_div_img" style="background-image: url('<?php echo($favicon); ?>');"> </div>
+            <div id="top_div_img" style="background-image: url('<?php echo($header_image); ?>');"> </div>
             <div id="item_desc">
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>

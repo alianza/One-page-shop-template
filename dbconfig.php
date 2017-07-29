@@ -59,14 +59,14 @@ try {
             $stmt->execute();
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            $header_image = "data:image/jpeg;base64," . base64_encode($result['header_image']);
-            $feature_image_1 = "data:image/jpeg;base64," . base64_encode($result['feature_image_1']);
-            $feature_image_2 = "data:image/jpeg;base64," . base64_encode($result['feature_image_2']);
-            $feature_image_3 = "data:image/jpeg;base64," . base64_encode($result['feature_image_3']);
-            $misc_image_1 = "data:image/jpeg;base64," . base64_encode($result['misc_image_1']);
-            $misc_image_2 = "data:image/jpeg;base64," . base64_encode($result['misc_image_2']);
-            $misc_image_3 = "data:image/jpeg;base64," . base64_encode($result['misc_image_3']);
-            $misc_image_4 = "data:image/jpeg;base64," . base64_encode($result['misc_image_4']);
+            $header_image = "data:image/png;base64," . base64_encode($result['header_image']);
+            $feature_image_1 = "data:image/png;base64," . base64_encode($result['feature_image_1']);
+            $feature_image_2 = "data:image/png;base64," . base64_encode($result['feature_image_2']);
+            $feature_image_3 = "data:image/png;base64," . base64_encode($result['feature_image_3']);
+            $misc_image_1 = "data:image/png;base64," . base64_encode($result['misc_image_1']);
+            $misc_image_2 = "data:image/png;base64," . base64_encode($result['misc_image_2']);
+            $misc_image_3 = "data:image/png;base64," . base64_encode($result['misc_image_3']);
+            $misc_image_4 = "data:image/png;base64," . base64_encode($result['misc_image_4']);
 
      } catch(PDOException $e) {
 
@@ -88,13 +88,13 @@ try {
             $about_us_link = $result['about_us_link'];
             $contact_link = $result['contact_link'];
             $faqs_link = $result['faqs_link'];
-            $social_image_1 = "data:image/jpeg;base64," . base64_encode($result['social_image_1']);
-            $social_image_2 = "data:image/jpeg;base64," . base64_encode($result['social_image_2']);
-            $social_image_3 = "data:image/jpeg;base64," . base64_encode($result['social_image_3']);
+            $social_image_1 = "data:image/png;base64," . base64_encode($result['social_image_1']);
+            $social_image_2 = "data:image/png;base64," . base64_encode($result['social_image_2']);
+            $social_image_3 = "data:image/png;base64," . base64_encode($result['social_image_3']);
             $social_link_1 = $result['social_link_1'];
             $social_link_2 = $result['social_link_2'];
             $social_link_3 = $result['social_link_3'];
-            $favicon = "data:image/jpeg;base64," . base64_encode($result['favicon']);
+            $favicon = "data:image/png;base64," . base64_encode($result['favicon']);
 
 
      } catch(PDOException $e) {
