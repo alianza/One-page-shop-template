@@ -163,6 +163,10 @@ p, h1, h2, li{
     margin-bottom: 10px;
 }
 
+.product_large_desc {
+    margin: 5px 0px 5px 0px;
+}
+
 #products_div {
     position: relative;
     top: 0;

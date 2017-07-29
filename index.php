@@ -34,17 +34,17 @@
             <div id="info_div">
             <div id="info_div1" class="info_box">
                 <img class="info_div_img" src="<?php echo($feature_image_1); ?>">
-                <p><?php echo($large_desc_1); ?></p>
+                <p class="product_large_desc"><?php echo($large_desc_1); ?></p>
             </div>
 
             <div id="info_div2" class="info_box">
                 <img class="info_div_img" src="<?php echo($feature_image_2); ?>">
-                <p><?php echo($large_desc_2); ?></p>
+                <p class="product_large_desc"><?php echo($large_desc_2); ?></p>
             </div>
 
             <div id="info_div3" class="info_box">
                 <img class="info_div_img" src="<?php echo($feature_image_3); ?>">
-                <p><?php echo($large_desc_3); ?></p>
+                <p class="product_large_desc"><?php echo($large_desc_3); ?></p>
             </div>
 
         </div>
