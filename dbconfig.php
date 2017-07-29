@@ -94,7 +94,6 @@ try {
             $social_link_1 = $result['social_link_1'];
             $social_link_2 = $result['social_link_2'];
             $social_link_3 = $result['social_link_3'];
-            $favicon = "data:image/png;base64," . base64_encode($result['favicon']);
 
 
      } catch(PDOException $e) {
