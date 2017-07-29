@@ -16,7 +16,7 @@
         <div id="page">
         <!--   Big image of product with text     -->
         <div id="top_div">
-            <div id="top_div_img" style="background-image: url('<?php echo($header_image); ?>');"> </div>
+            <div id="top_div_img" style="background-image: url('<?php echo($favicon); ?>');"> </div>
             <div id="item_desc">
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>
