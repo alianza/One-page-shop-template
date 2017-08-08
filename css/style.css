@@ -181,7 +181,7 @@ p, h1, h2, li{
     display: inline-block;
     width: 38%;
     vertical-align: top;
-    margin: 10px;
+    margin: 7.5px;
 }
 
 .order_button:hover {
