@@ -1,6 +1,19 @@
 <?php
 
-    include("userconfig.php");
+    try {
+
+        include("userconfig.php");
+
+    } catch {
+
+        $onepage_ID = 1;
+        $global_ID = 1;
+        DEFINE("DB_USER", "database_admin");
+        DEFINE  ("DB_PASS", "DamsCommerce12");
+
+    }
+
+
 
 try {
 
