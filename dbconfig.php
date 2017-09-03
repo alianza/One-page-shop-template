@@ -1,6 +1,6 @@
 <?php
 
-    if (!include("userconfig.php")) {
+    if (include("userconfig.php") === false) {
 
         $onepage_ID = 1;
         $global_ID = 1;
