@@ -1,10 +1,6 @@
 <?php
 
-    try {
-
-        include("userconfig.php");
-
-    } catch {
+    if (include("userconfig.php")) {
 
         $onepage_ID = 1;
         $global_ID = 1;
