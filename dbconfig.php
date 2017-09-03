@@ -1,15 +1,15 @@
 <?php
 
-    if (include("userconfig.php") === false) {
-
+//The following two lines of code should be changed to the appropriate onepage and global ID's
         $onepage_ID = 1;
         $global_ID = 1;
+
+//The following two lines of code should be changed to the appropriate database username and passowrd
         DEFINE("DB_USER", "database_admin");
         DEFINE("DB_PASS", "DamsCommerce12");
 
-    }
-
-
+//DO NET EDIT ANYTHING BELOW THIS LINE!
+//----------------------------------------------------------------------------------------------------------------------------------------------------//
 
 try {
 
