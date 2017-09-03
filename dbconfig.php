@@ -1,6 +1,6 @@
 <?php
 
-    include('userconfig.php');
+    include("userconfig.php");
 
 try {
 
@@ -17,10 +17,10 @@ try {
 
 try {
 
-            $sql = "SELECT * FROM `text` WHERE id = $onepage_ID";
+            $sql = "SELECT * FROM `text` WHERE id = :onepage_ID";
 
             $stmt = $db->prepare($sql);
-            $stmt->execute();
+            $stmt->execute(array(':onepage_ID' => $onepage_ID));
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
             $title = $result['title'];
@@ -48,10 +48,10 @@ try {
 
 try {
 
-            $sql = "SELECT * FROM `images` WHERE id = $onepage_ID";
+            $sql = "SELECT * FROM `images` WHERE id = :onepage_ID";
 
             $stmt = $db->prepare($sql);
-            $stmt->execute();
+            $stmt->execute(array(':onepage_ID' => $onepage_ID));
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
             $header_image = "data:image/jpg;base64," . base64_encode($result['header_image']);
@@ -73,10 +73,10 @@ try {
 
 try {
 
-            $sql = "SELECT * FROM `global` WHERE id = $global_ID";
+            $sql = "SELECT * FROM `global` WHERE id = :global_ID";
 
             $stmt = $db->prepare($sql);
-            $stmt->execute();
+            $stmt->execute(array(':global_ID' => $global_ID));
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
             $more_products_link = $result['more_products_link'];
