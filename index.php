@@ -100,7 +100,8 @@
                 <a href="<?php echo($social_link_3); ?>"><img class="socialmedia_icon" src="<?php echo($social_image_3); ?>"></a>
             </div>
 
-            <div id='copyright'>&copy; Copyright DamsCommerce</div>
+            <div class='copyright'>&copy; Copyright DamsCommerce</div>
+            <div class='official'><u>KVK</u>: 69141215 <u>BTW</u>: NL857752170B01</div>
 
             </div>
 
