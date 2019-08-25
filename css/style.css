@@ -236,14 +236,12 @@ a:visited {
 }
 
 .copyright {
-    margin-left: 8px;
-    margin-top: 25px;
+    margin: 5px !important;
     text-align: center;
 
 }
 .official {
-    margin-left: 8px;
-    margin-top: 25px;
+    margin: 5px !important;
     text-align: center;
 }
 
@@ -318,10 +316,10 @@ a:visited {
     }
 
     .products_box {
-    display: inline-block;
-    width: 150px;
-    vertical-align: top;
-    margin: 10px;
+        display: inline-block;
+        width: 150px;
+        vertical-align: top;
+        margin: 10px;
     }
 
     #item_desc {
