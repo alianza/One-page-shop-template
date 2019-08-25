@@ -19,16 +19,19 @@ p, h1, h2, li{
 #top_div {
     width: 100%;
     position: relative;
+    height: 100vh;
 }
 
 #top_div_img {
-    /* Set height to viewheight */
-    min-height: 100vh;
+    max-height: 100vh;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+/*    Centering     */
+    object-fit: cover;
 }
 
 #item_desc {
