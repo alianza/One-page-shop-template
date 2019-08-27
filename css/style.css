@@ -24,13 +24,6 @@ p, h1, h2, li{
 
 #top_div_img {
     height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-/*    Centering     */
     object-fit: cover;
 }
 

@@ -17,7 +17,7 @@
     <div id="page">
         <!--   Big image of product with text     -->
         <div id="top_div">
-            <video id="top_div_img" autoplay muted src="media/kak1.mp4" width="100%" height="100%"></video>
+            <video id="top_div_img" autoplay muted loop src="media/kak1.mp4" width="100%" height="100%"></video>
             <div id="item_desc">
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>
