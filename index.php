@@ -1,23 +1,23 @@
 <!doctype html>
 
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href=".//css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-        <?php include("dbconfig.php") ?>
-        <title><?php echo($title); ?></title>
-	</head>
 
-	<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href=".//css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <?php include("dbconfig.php") ?>
+    <title><?php echo($title); ?></title>
+</head>
 
-        <div id="page">
+<body>
+
+    <div id="page">
         <!--   Big image of product with text     -->
         <div id="top_div">
-            <video id="top_div_img" autoplay muted src="media/kak1.mp4" width="100%" height="100%"
-                   ></video>
+            <video id="top_div_img" autoplay muted src="media/kak1.mp4" width="100%" height="100%"></video>
             <div id="item_desc">
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>
@@ -34,22 +34,22 @@
             <h2 class="section_title" id="features"><?php echo($small_title_1); ?></h2>
 
             <div id="info_div">
-            <div id="info_div1" class="info_box">
-                <img class="info_div_img" src="<?php echo($feature_image_1); ?>">
-                <p class="product_large_desc"><?php echo($large_desc_1); ?></p>
-            </div>
+                <div id="info_div1" class="info_box">
+                    <img class="info_div_img" src="<?php echo($feature_image_1); ?>">
+                    <p class="product_large_desc"><?php echo($large_desc_1); ?></p>
+                </div>
 
-            <div id="info_div2" class="info_box">
-                <img class="info_div_img" src="<?php echo($feature_image_2); ?>">
-                <p class="product_large_desc"><?php echo($large_desc_2); ?></p>
-            </div>
+                <div id="info_div2" class="info_box">
+                    <img class="info_div_img" src="<?php echo($feature_image_2); ?>">
+                    <p class="product_large_desc"><?php echo($large_desc_2); ?></p>
+                </div>
 
-            <div id="info_div3" class="info_box">
-                <img class="info_div_img" src="<?php echo($feature_image_3); ?>">
-                <p class="product_large_desc"><?php echo($large_desc_3); ?></p>
-            </div>
+                <div id="info_div3" class="info_box">
+                    <img class="info_div_img" src="<?php echo($feature_image_3); ?>">
+                    <p class="product_large_desc"><?php echo($large_desc_3); ?></p>
+                </div>
 
-        </div>
+            </div>
         </div>
 
         <!--  Variations   -->
@@ -59,7 +59,7 @@
             <h2 class="section_title" id="products"><?php echo($small_title_2); ?></h2>
 
             <div id="products_div">
-                <div id="product_box1"  class="products_box">
+                <div id="product_box1" class="products_box">
                     <img class="products_div_img" src="<?php echo($misc_image_1); ?>">
                     <p class="product_small_desc"><?php echo($small_desc_1); ?></p>
                 </div>
@@ -80,8 +80,8 @@
                 </div>
 
             </div>
-                <a href="<?php echo($order_button_link); ?>"><button class="order_button"><?php echo($order_button); ?></button></a>
-            </div>
+            <a href="<?php echo($order_button_link); ?>"><button class="order_button"><?php echo($order_button); ?></button></a>
+        </div>
 
         <!--    Footer    -->
         <div class="footer_div">
@@ -104,8 +104,9 @@
             <div class='copyright'>&copy; Copyright DamsCommerce</div>
             <div class='official'><u>KVK</u>: 69141215 <u>BTW</u>: NL857752170B01</div>
 
-            </div>
-
         </div>
-	</body>
+
+    </div>
+</body>
+
 </html>

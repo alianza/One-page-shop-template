@@ -19,11 +19,11 @@ p, h1, h2, li{
 #top_div {
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 90vh;
 }
 
 #top_div_img {
-    max-height: 100vh;
+    height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
