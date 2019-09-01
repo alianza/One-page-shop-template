@@ -18,6 +18,13 @@ p, h1, h2, li{
     color: #333;
 }
 
+.main_logo img {
+    position: absolute;
+    z-index: 2;
+    margin: 1rem;
+    width: 80%;
+}
+
 #top_div {
     width: 100%;
     position: relative;
@@ -56,7 +63,7 @@ p, h1, h2, li{
 }
 
 .refer_button {
-    background-color: #353535;
+    background-color: var(--theme-red);
     color: #fff;
     font-weight: bold;
     font-family: Nunito;
@@ -66,7 +73,7 @@ p, h1, h2, li{
     cursor: pointer;
     font-size: 100%;
     outline: 0;
-    transition-duration: 0.4s;
+    transition-duration: .4s;
     border-style: none;
     margin-bottom: 5px;
 }
@@ -74,6 +81,7 @@ p, h1, h2, li{
 .refer_button:hover {
     background-color: white;
     color: var(--theme-red);
+    transition-duration: .2s;
 }
 
 .order_button {
@@ -287,32 +295,9 @@ a:hover {
         padding-bottom: 4em;
     }
 
-/*
-    .order_button {
-        background-color: #3da540;
-        color: #fff;
-        font-weight: bold;
-        padding: 1em;
-        padding-left: 2em;
-        padding-right: 2em;
-        text-align: center;
-        vertical-align: middle;
-        cursor: pointer;
-        font-size: 120%;
-        outline: 0;
-        transition-duration: 0.4s;
-        border-style: none;
-        max-width: 680px;
-        min-width: 340px;
-        width: 80%;
+    .main_logo img {
+        width: 320px;
     }
-
-    .order_button:hover {
-        background-color: #4caf50;
-        color: #fff;
-    }
-*/
-
 
     .info_box:hover{
         background-color: #cccccc;
