@@ -38,7 +38,7 @@
         <div id="info_div_container">
             <div class="v-align-helper"></div>
 
-            <h2 class="section_title" id="features"><?php echo($small_title_1); ?></h2>
+            <h2 class="section_title_theme" id="features"><?php echo($small_title_1); ?></h2>
 
             <div id="info_div">
                 <div id="info_div1" class="info_box">
@@ -63,7 +63,7 @@
         <div id="products_div_container">
             <div class="v-align-helper"></div>
 
-            <h2 class="section_title" id="products"><?php echo($small_title_2); ?></h2>
+            <h2 class="section_title_light" id="products"><?php echo($small_title_2); ?></h2>
 
             <div id="products_div">
                 <div id="product_box1" class="products_box">
