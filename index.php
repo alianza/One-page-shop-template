@@ -31,8 +31,8 @@
             <div id="item_desc">
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>
-                <a href="#info_div_container"><button class="refer_button"><?php echo($refer_button); ?></button></a>
-                <a href="#products_div_container"><button class="refer_button"><?php echo($order_button); ?></button></a>
+                <a href="#products_div_container"><button class="refer_button refer_button_primary"><?php echo($order_button); ?></button></a>
+                <a href="#info_div_container"><button class="refer_button refer_button_secondary"><?php echo($refer_button); ?></button></a>
             </div>
             <div class="v-align-helper"></div>
         </div>
@@ -111,8 +111,11 @@
                 <a href="<?php echo($social_link_3); ?>"><img class="socialmedia_icon" src="<?php echo($social_image_3); ?>"></a>
             </div>
 
-            <div class='copyright'>&copy; Copyright DamsCommerce</div>
-            <div class='official'><u>KVK</u>: 69141215 <u>BTW</u>: NL857752170B01</div>
+            <div class="official_container">
+                <div class='official_item'>&copy; Copyright DamsCommerce</div>
+                <div class='official_item'><u>KVK</u>: 69141215 <u>BTW</u>: NL857752170B01</div>
+            </div>
+
 
         </div>
 

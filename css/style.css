@@ -60,11 +60,11 @@ p, h1, h2, li{
     font-size: 48px;
     font-style: italic;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    word-break: break-word;
+    margin-bottom: .5rem;
 }
 
 .refer_button {
-    background-color: var(--theme-red);
-    color: #fff;
     font-weight: bold;
     font-family: Nunito;
     padding: 1em;
@@ -78,9 +78,26 @@ p, h1, h2, li{
     margin-bottom: 5px;
 }
 
-.refer_button:hover {
+a .refer_button_primary {
+    background-color: var(--theme-red);
+    color: #fff;
+}
+
+a button.refer_button_primary:hover {
     background-color: white;
     color: var(--theme-red);
+    transition-duration: .2s;
+}
+
+a .refer_button_secondary {
+    background-color: white;
+    color: var(--theme-red);
+}
+
+a button.refer_button_secondary:hover {
+    background-color: var(--theme-red);
+    color: white;
+    border-color: white;
     transition-duration: .2s;
 }
 
@@ -156,7 +173,7 @@ p, h1, h2, li{
     bottom: 0;
     left: 0;
     text-align: center;
-    background-color: var(--theme-red);
+    background-color: navajowhite;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -176,11 +193,13 @@ p, h1, h2, li{
     overflow-y: auto;
     word-wrap: break-word;
     margin-top: 0px;
+    font-size: large;
     margin-bottom: 10px;
 }
 
 .product_large_desc {
     margin: 5px 0px 5px 0px;
+    font-size: larger;
 }
 
 #products_div {
@@ -252,19 +271,23 @@ a:hover {
 
 .footer_div {
     padding-top: 1em;
+    background-color: #191919;
 }
 
 #footer_company {
     margin-right: 40px;
 }
 
-.copyright {
-    margin: 5px !important;
-    text-align: center;
-
+.official_container {
+    display: flex;
+    flex-direction: column;
 }
-.official {
-    margin: 5px !important;
+
+.official_item {
+    background-color: #191919;
+    display: inline-block;
+    color: var(--theme-red);
+    margin: .5em;
     text-align: center;
 }
 
@@ -297,6 +320,7 @@ a:hover {
 
     .main_logo img {
         width: 320px;
+        filter: brightness() invert(1)
     }
 
     .info_box:hover{
@@ -347,11 +371,10 @@ a:hover {
         font-weight: bolder;
         font-size: 64px;
         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        /* color: var(--theme-red); */
     }
 
     .refer_button {
-        background-color: var(--theme-red);
-        color: #fff;
         font-weight: bold;
         padding: 1em;
         padding-left: 2em;
@@ -362,10 +385,8 @@ a:hover {
         font-size: 100%;
         outline: 0;
         transition-duration: 0.4s;
-        border-style: none;
         margin-bottom: 5px;
     }
-
 }
 
 @media (min-width: 600px) {
@@ -375,16 +396,10 @@ a:hover {
         text-decoration: none;
     }
 
-    .copyright {
-        margin: 0px;
-        float: left;
+    .official_container {
+        flex-direction: row;
+        justify-content: space-between
     }
-
-    .official {
-        margin: 0px;
-        float: right;
-    }
-
 }
 
 @media (min-width: 1080px) {
@@ -402,7 +417,7 @@ a:hover {
      .info_box:hover{
         background-color: #cccccc;
         transition: all .25s;
-        transform: scale(1.2);
+        transform: scale(1.1);
         box-shadow: 0px 0px 50px 0px #333;
         z-index: 10;
     }
