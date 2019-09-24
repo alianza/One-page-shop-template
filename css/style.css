@@ -28,7 +28,7 @@ p, h1, h2, li{
 #top_div {
     width: 100%;
     position: relative;
-    height: 90vh;
+    height: 100vh;
 }
 
 #top_div_img {
@@ -236,6 +236,96 @@ a button.refer_button_secondary:hover {
     color: #333;
 }
 
+#testemonials_div {
+    height: 250px;
+}
+
+.testemonials_slider {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.testemonials_slider .slick-slide {
+    height: 150px;
+    width: 280px;
+}
+
+.testemonials_slider .slick-slide_container {
+    position: absolute;
+    height: 100%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px
+}
+
+.testemonials_slider .slick-slide_inner_container {
+    position: relative;
+    height: 150px;
+}
+
+.slick-slide_container img {
+    width: 64px;
+    display: inline-block !important;
+    border-radius: 50%;
+}
+
+.slick-slide_container h3 {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 64px;
+    margin: 0;
+    margin-left: 4px;
+}
+
+.slick-slide_container p {
+    overflow: auto;
+    height: 86px;
+    margin: 0;
+}
+
+/*Slick Slider Stuff*/
+
+.slick-slide {
+    transition: all 1s;
+}
+
+#testemonials_div .testemonials_slider .slick-slide:hover {
+    filter: none;
+    transition: all .5s;
+}
+
+#testemonials_div .slick-slide:not(.slick-current) {
+    filter: blur(1px);
+    opacity: .8;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: var(--theme-red) !important;
+    padding: 8px !important;
+    transition: opacity .2s;
+}
+
+.slick-next, .slick-prev {
+    z-index: 500 !important;
+}
+
+.slick-next {
+    right: 35px !important;
+}
+
+.slick-prev {
+    left: 25px !important;
+}
+
+.testemonials_slider .slick-slide:hover {
+    cursor: grab;
+}
+
+.testemonials_slider .slick-slide:active:hover {
+    cursor: grabbing;
+}
+
 a {
     color: var(--theme-red);
     text-decoration-color: transparent;
@@ -249,6 +339,10 @@ a:visited {
 a:hover {
     text-decoration-color: var(--theme-red);
     transition: text-decoration-color .2s;
+}
+
+.footer_div a {
+    color: white;
 }
 
 #socialmedia_div {
@@ -285,9 +379,8 @@ a:hover {
 }
 
 .official_item {
-    background-color: #191919;
     display: inline-block;
-    color: var(--theme-red);
+    color: white;
     margin: .5em;
     text-align: center;
 }
@@ -310,6 +403,10 @@ a:hover {
 }
 
 @media screen and (min-width: 400px) and (min-height: 400px){
+
+    .testemonials_slider .slick-slide {
+        width: 350px;
+    }
 
     #products_div_container {
         padding-bottom: 3em;
@@ -404,6 +501,10 @@ a:hover {
 }
 
 @media (min-width: 1080px) {
+
+    .testemonials_slider .slick-slide {
+        width: 450px;
+    }
 
     .info_box {
         display: inline-block;
