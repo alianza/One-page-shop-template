@@ -128,7 +128,7 @@
             <div class="testimonials_slider slider">
 
                 <?php
-//                Display Testimonials
+//              Display Testimonials
                 while ($row = $stmttest->fetch(PDO::FETCH_ASSOC)) {
                 echo("<div><div class='slick-slide_inner_container'><div class='slick-slide_container'>
                         <img src='" . "data:image/jpg;base64," . base64_encode($row['image']) . "'>
