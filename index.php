@@ -29,6 +29,25 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     </head>
+
+    <!-- Facebook Pixel Code -->
+        <script>
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '398533611065090');
+          fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+          src="https://www.facebook.com/tr?id=398533611065090&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
+
 <body>
 
     <div id="page">
@@ -103,52 +122,24 @@
             <a href="<?php echo($order_button_link); ?>"><button class="order_button"><?php echo($order_button); ?></button></a>
         </div>
 
-        <!--  Testemonials  -->
-        <div id="testemonials_div">
+        <!--  testimonials  -->
+        <div id="testimonials_div">
 
-            <div class="testemonials_slider slider">
-              <div><div class="slick-slide_inner_container"><div class="slick-slide_container">
-                  <img src="http://placehold.jp/150x150.png">
-                  <h3>Siu Han</h3>
-                  <p>Lorem Ipsum is slechtst drukkerij- en zetterijwezen. Lorem Ipsijfstak sinds aar husselde omte maken.</p>
-                  </div>
-                  </div>
-                </div>
-              <div><div class="slick-slide_inner_container"><div class="slick-slide_container">
-                  <img src="http://placehold.jp/150x150.png">
-                  <h3>Floris Adrerie</h3>
-                  <p>Lorem Ipsum is slechts een proeftekst uit het drukkerijwezen. Lorker een zethaak met letters nam en ze door elkaar husseldet-catalogus te maken.</p>
-                  </div>
-                  </div>
-                </div>
-              <div><div class="slick-slide_inner_container"><div class="slick-slide_container">
-                  <img src="http://placehold.jp/150x150.png">
-                  <h3>Faka Gino</h3>
-                  <p>Lorem Ipsum is slechts een proeftekst uit het drukkerij- enard proefteksinds de 16e eeuw, toen een onbekeor elkaar husselde om eenen.</p>
-                  </div>
-                  </div>
-                </div>
-              <div><div class="slick-slide_inner_container"><div class="slick-slide_container">
-                  <img src="http://placehold.jp/150x150.png">
-                  <h3>Pieter Sjaak</h3>
-                  <p>Lorem Ipsum is slechts een proeftekstrijwezen. Loremestand16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husseldeom een font-catalogus te maken.</p>
-                  </div>
-                  </div>
-                </div>
-              <div><div class="slick-slide_inner_container"><div class="slick-slide_container">
-                  <img src="http://placehold.jp/150x150.png">
-                  <h3>Jan-Willem</h3>
-                  <p>Lorem Ipsumit  drukkerij- en zetterijwezen. Lorem Ipsum 6e eeuw, toen eenet letters nam en ze door elkaar husselde om een font-catalogus te maken.</p>
-                  </div>
-                  </div>
-                </div>
-              <div><div class="slick-slide_inner_container"><div class="slick-slide_container">
-                  <img src="http://placehold.jp/150x150.png">
-                  <h3>Je Weet Zelf</h3>
-                  <p>Lorem Ipsum is slechts een proeftekst uit het drukkerij- en e bedrijfstak sinds de 16e eeuwukker een zethaak met letters nam en ze doos te maken.</p>
-                  </div>
-                  </div>
-                </div>
+            <div class="testimonials_slider slider">
+
+                <?php
+//                Display Testimonials
+                while ($row = $stmttest->fetch(PDO::FETCH_ASSOC)) {
+                echo("<div><div class='slick-slide_inner_container'><div class='slick-slide_container'>
+                        <img src='" . "data:image/jpg;base64," . base64_encode($row['image']) . "'>
+                        <h3>" . $row['name'] . "</h3>
+                        <p>" . $row['testimony'] . "</p>
+                        </div>
+                        </div>
+                    </div>");
+                }
+                ?>
+
             </div>
 
         </div>
@@ -178,12 +169,12 @@
     </div>
     <script>
         $(document).ready(function(){
-            $('.testemonials_slider').slick({
+            $('.testimonials_slider').slick({
                 accessibility: false,
                 centerMode: true,
                 centerPadding: '40px',
                 slidesToShow: 3,
-//                autoplay: true,
+                autoplay: true,
                 autoplaySpeed: 5000,
                 pauseOnFocus: true,
                 pauseOnHover: true,
