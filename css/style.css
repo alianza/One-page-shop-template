@@ -181,7 +181,7 @@ a button.refer_button_secondary:hover {
 .products_div_img {
     width: 100%;
     height: auto;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .product_small_desc {
@@ -237,12 +237,16 @@ a button.refer_button_secondary:hover {
 }
 
 #testimonials_div {
-    height: 250px;
+/*    height: 250px;*/
 }
 
 .testimonials_slider {
+/*
     top: 50%;
     transform: translateY(-50%);
+*/
+    margin-top: 32px;
+    padding: 20px 0;
 }
 
 .testimonials_slider .slick-slide {
@@ -253,7 +257,6 @@ a button.refer_button_secondary:hover {
 .testimonials_slider .slick-slide_container {
     position: absolute;
     height: 100%;
-    margin: 0 auto;
     top: 50%;
     transform: translateY(-50%);
     padding: 10px
@@ -261,19 +264,19 @@ a button.refer_button_secondary:hover {
 
 .testimonials_slider .slick-slide_inner_container {
     position: relative;
-    height: 150px;
+    height: 100%;
 }
 
 .slick-slide_container img {
-    width: 64px;
+    width: 48px;
     display: inline-block !important;
-    border-radius: 50%;
+    margin-bottom: 5px;
 }
 
 .slick-slide_container h3 {
     display: inline-block;
     vertical-align: top;
-    line-height: 64px;
+    line-height: 24px;
     margin: 0;
     margin-left: 4px;
 }
@@ -281,7 +284,6 @@ a button.refer_button_secondary:hover {
 .slick-slide_container p {
     overflow: auto;
     height: 86px;
-    margin: 0;
 }
 
 /*Slick Slider Stuff*/
