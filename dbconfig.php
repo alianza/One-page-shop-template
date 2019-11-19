@@ -1,7 +1,7 @@
 <?php
 
 //The following two lines of code should be changed to the appropriate onepage and global ID's
-        $onepage_ID = 1;
+        $onepage_ID = 3;
         $global_ID = 1;
 
 //The following two lines of code should be changed to the appropriate database username and passowrd
@@ -71,6 +71,21 @@ try {
             $misc_image_2 = "data:image/jpg;base64," . base64_encode($result['misc_image_2']);
             $misc_image_3 = "data:image/jpg;base64," . base64_encode($result['misc_image_3']);
             $misc_image_4 = "data:image/jpg;base64," . base64_encode($result['misc_image_4']);
+
+     } catch(PDOException $e) {
+
+            echo $e->GetMessage();
+
+    }
+
+//get Testimonials
+
+try {
+
+            $sql = "SELECT * FROM `testimonials` WHERE onepage_id = :onepage_ID";
+
+            $stmttest = $db->prepare($sql);
+            $stmttest->execute(array(':onepage_ID' => $onepage_ID));
 
      } catch(PDOException $e) {
 
