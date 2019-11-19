@@ -48,6 +48,27 @@
         /></noscript>
     <!-- End Facebook Pixel Code -->
 
+<!--    Smooth scroll 'Read More'-->
+
+    <script>
+
+        $(document).ready(function(){
+            document.querySelectorAll('a[href^="#products_div_container"]').forEach(anchor => {anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+<!--  End  Smooth scroll 'Read More'-->
+
 <body>
 
     <div id="page">
@@ -61,7 +82,7 @@
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>
                 <a href="#products_div_container"><button class="refer_button refer_button_primary"><?php echo($order_button); ?></button></a>
-                <a href="#info_div_container"><button class="refer_button refer_button_secondary"><?php echo($refer_button); ?></button></a>
+                <a href="#products_div_container"><button class="refer_button refer_button_secondary"><?php echo($refer_button); ?></button></a>
             </div>
             <div class="v-align-helper"></div>
         </div>
