@@ -148,6 +148,7 @@ a button.refer_button_secondary:hover {
     font-weight: bolder;
     font-style: italic;
     color: var(--theme-red);
+    padding: 0px 8px;
 }
 
 .section_title_light {
