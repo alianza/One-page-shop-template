@@ -50,7 +50,6 @@
     <!-- End Facebook Pixel Code -->
 
 <!--    Smooth scroll 'Read More'-->
-
     <script>
 
         $(document).ready(function(){
@@ -176,6 +175,9 @@
                 </ul>
             </div>
 
+            <div id="footer_payments">
+                <img src="media/payment_methods.png">
+            </div>
 
             <div id='socialmedia_div'>
                 <a href="<?php echo($social_link_1); ?>"><img class="socialmedia_icon" src="<?php echo($social_image_1); ?>"></a>

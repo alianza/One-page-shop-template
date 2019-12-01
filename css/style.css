@@ -346,6 +346,17 @@ a:hover {
     transition: text-decoration-color .2s;
 }
 
+
+#footer_payments {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#footer_payments img {
+    max-width: 250px;
+    width: 90%;
+}
+
 .footer_div a {
     color: white;
 }
