@@ -70,7 +70,6 @@
 <!--  End  Smooth scroll 'Read More'-->
 
 <body>
-
     <div id="page">
         <div class="main_logo">
             <img src="media/logo.png">
@@ -88,7 +87,6 @@
         </div>
 
         <div id="icons_div">
-
             <div id="icons_container">
                 <img src="media/ico_accuracy.jpg">
                 <img src="media/ico_cardio.jpg">
@@ -97,7 +95,6 @@
                 <img src="media/ico_speed.jpg">
                 <img src="media/ico_tricks.jpg">
             </div>
-
         </div>
 
         <!--  Information about the 3 main features of product  -->
