@@ -87,10 +87,21 @@
             <div class="v-align-helper"></div>
         </div>
 
+        <div id="icons_div">
+
+            <div id="icons_container">
+                <img src="media/ico_accuracy.jpg">
+                <img src="media/ico_cardio.jpg">
+                <img src="media/ico_learn.jpg">
+                <img src="media/ico_reflex.jpg">
+                <img src="media/ico_speed.jpg">
+                <img src="media/ico_tricks.jpg">
+            </div>
+
+        </div>
+
         <!--  Information about the 3 main features of product  -->
         <div id="info_div_container">
-            <div class="v-align-helper"></div>
-
             <h2 class="section_title_theme" id="features"><?php echo($small_title_1); ?></h2>
 
             <div id="info_div">
@@ -114,8 +125,6 @@
 
         <!--  Variations  -->
         <div id="products_div_container">
-            <div class="v-align-helper"></div>
-
             <h2 class="section_title_light" id="products"><?php echo($small_title_2); ?></h2>
 
             <div id="products_div">
@@ -145,7 +154,6 @@
 
         <!--  testimonials  -->
         <div id="testimonials_div">
-
             <div class="testimonials_slider slider">
 
                 <?php

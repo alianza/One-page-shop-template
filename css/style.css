@@ -28,7 +28,7 @@ p, h1, h2, li{
 #top_div {
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 90vh;
 }
 
 #top_div_img {
@@ -138,12 +138,38 @@ a button.refer_button_secondary:hover {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
-    box-shadow: 0px 0px 50px 0px #000000;
 }
 
 #info_div {
     display: inline-block;
     vertical-align: middle;
+}
+
+#icons_div {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 1em;
+/*    background-color: var(--theme-red);*/
+}
+
+#icons_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#icons_div img {
+    width: 100px;
+    transition: transform .5s;
+}
+
+#icons_div img:hover {
+    transform: scale(1.2);
+    transition: transform .25s;
 }
 
 .section_title_light, .section_title_theme {
