@@ -5,8 +5,8 @@
         $global_ID = 1;
 
 //The following two lines of code should be changed to the appropriate database username and passowrd
-        DEFINE("DB_USER", "database_admin");
-        DEFINE("DB_PASS", "DamsCommerce12");
+        DEFINE("DB_USER", "root");
+        DEFINE("DB_PASS", "");
 
 //DO NET EDIT ANYTHING BELOW THIS LINE!
 //----------------------------------------------------------------------------------------------------------------------------------------------------//

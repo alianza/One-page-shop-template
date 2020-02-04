@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
     --theme-red: #c1282d;
 }
 
 body {
-    font-family: 'Nunito' !important;
+    font-family: 'Roboto' !important;
     line-height: 1.25;
     margin: 0;
 }
@@ -21,8 +21,8 @@ p, h1, h2, li{
 .main_logo img {
     position: absolute;
     z-index: 2;
-    margin: 1rem;
-    width: 80%;
+    width: 100%;
+    max-width: 352px;
 }
 
 #top_div {
@@ -51,7 +51,9 @@ p, h1, h2, li{
     text-align: center;
     font-size: 18px;
     font-weight: bolder;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+/*    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;*/
+    margin-top: 0;
+    color: white;
 }
 
 .item_title {
@@ -59,14 +61,15 @@ p, h1, h2, li{
     font-weight: bolder;
     font-size: 48px;
     font-style: italic;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    color: white;
+/*    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;*/
     word-break: break-word;
     margin-bottom: .5rem;
 }
 
 .refer_button {
     font-weight: bold;
-    font-family: Nunito;
+    font-family: Roboto;
     padding: 1em;
     text-align: center;
     vertical-align: middle;
@@ -79,7 +82,7 @@ p, h1, h2, li{
 }
 
 a .refer_button_primary {
-    background-color: var(--theme-red);
+    background-color: #3da540;
     color: #fff;
 }
 
@@ -106,7 +109,7 @@ a button.refer_button_secondary:hover {
     border: 2px solid white;
     color: #fff;
     font-weight: 700;
-    font-family: Nunito;
+    font-family: Roboto;
     padding: 1em;
     padding-left: 2em;
     padding-right: 2em;
@@ -432,10 +435,6 @@ a:hover {
         padding-bottom: 4em;
     }
 
-    .main_logo img {
-        width: 320px;
-    }
-
     .info_box:hover{
         background-color: #cccccc;
         transition: all .25s;
@@ -475,15 +474,15 @@ a:hover {
     .item_desc_text {
         text-align: center;
         font-size: 24px;
-        font-weight: bolder;
-        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+/*        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;*/
+        font-weight: normal;
     }
 
     .item_title {
         text-align: center;
         font-weight: bolder;
         font-size: 64px;
-        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+/*        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;*/
         /* color: var(--theme-red); */
     }
 
