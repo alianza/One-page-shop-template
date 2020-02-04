@@ -163,13 +163,14 @@ a button.refer_button_secondary:hover {
 }
 
 #icons_div img {
-    width: 100px;
     transition: transform .5s;
+	width: 125px;
+    height: 125px;
 }
 
 #icons_div img:hover {
-    transform: scale(1.2);
-    transition: transform .25s;
+    transform: none;
+    transition: none;
 }
 
 .section_title_light, .section_title_theme {
@@ -513,6 +514,11 @@ a:hover {
         transition-duration: 0.4s;
         margin-bottom: 5px;
     }
+
+	#icons_div img:hover {
+		transform: scale(1.2);
+		transition: transform .25s;
+	}
 }
 
 @media (min-width: 600px) {
