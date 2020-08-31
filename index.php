@@ -29,6 +29,17 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115000385-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-115000385-3');
+	</script>
+
     </head>
 
     <!-- Facebook Pixel Code -->
@@ -76,7 +87,7 @@
         </div>
         <!--  Big video of product with text  -->
         <div id="top_div">
-            <video id="top_div_img" autoplay muted loop src="media/kak1.mp4" width="100%" height="100%"></video>
+            <video id="top_div_img" autoplay playsinline muted loop src="media/kak1.mp4" width="100%" height="100%"></video>
             <div id="item_desc">
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>
@@ -146,8 +157,14 @@
                 </div>
 
             </div>
-            <a href="<?php echo($order_button_link); ?>"><button class="order_button"><?php echo($order_button); ?></button></a>
+            <a href="<?php echo($order_button_link); ?>"><button id="order_button" class="order_button"><?php echo($order_button); ?></button></a>
         </div>
+
+		<script>
+		document.getElementById('order_button').addEventListener('click', function() {
+				fbq('track', 'Purchase');
+		}, false);
+	</script>
 
         <!--  testimonials  -->
         <div id="testimonials_div">
@@ -231,6 +248,8 @@
               ]
             });
         });
+
+		document.getElementById('top_div_img').play();
     </script>
 </body>
 
