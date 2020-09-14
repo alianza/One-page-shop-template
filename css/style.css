@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
 :root {
     --theme-red: #c1282d;
@@ -14,7 +15,7 @@ p {
     text-align: left;
 }
 
-p, h1, h2, li{
+p, h1, h2, li {
     color: #333;
 }
 
@@ -58,13 +59,12 @@ p, h1, h2, li{
 
 .item_title {
     text-align: center;
-    font-weight: bolder;
-    font-size: 48px;
-    font-style: italic;
     color: white;
-/*    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;*/
+    font-size: 48px;
+    /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
     word-break: break-word;
     margin-bottom: .5rem;
+    font-family: 'Reem Kufi' !important;
 }
 
 .refer_button {
@@ -138,7 +138,6 @@ a button.refer_button_secondary:hover {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
-    box-shadow: 0px 0px 50px 0px #000000;
 }
 
 #info_div {
@@ -146,12 +145,52 @@ a button.refer_button_secondary:hover {
     vertical-align: middle;
 }
 
+#icons_div {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 12px;
+/*    background-color: var(--theme-red);*/
+}
+
+#icons_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#icons_div img {
+    transition: transform .5s;
+	width: 100px;
+    height: 100px;
+}
+
+#icons_div img:hover {
+    transform: none;
+    transition: none;
+}
+
 .section_title_light, .section_title_theme {
     font-size: 32px;
-    font-weight: bolder;
-    font-style: italic;
     color: var(--theme-red);
     padding: 0px 8px;
+    margin: 14px 0px 16px 0px;
+    font-family: 'Reem Kufi' !important;
+}
+
+.section_title_light::after, .section_title_theme::after {
+    content: " ";
+    border-bottom: 4px solid var(--theme-red);
+    width: 100px;
+    display: block;
+    margin: 6px auto -4px;
+}
+
+.section_title_light::after {
+    border-bottom: 4px solid white;
 }
 
 .section_title_light {
@@ -171,10 +210,6 @@ a button.refer_button_secondary:hover {
     transition: all .25s;
     z-index: 0;
 }
-
-.info_box:hover{
-        background-color: #cccccc;
-    }
 
 #products_div_container {
     position: relative;
@@ -432,15 +467,7 @@ a:hover {
     }
 
     #info_div_container {
-        padding-bottom: 4em;
-    }
-
-    .info_box:hover{
-        background-color: #cccccc;
-        transition: all .25s;
-        transform: scale(1.1);
-        box-shadow: 0px 0px 50px 0px #333;
-        z-index: 10;
+        padding-bottom: 2em;
     }
 
     .info_box {
@@ -480,10 +507,9 @@ a:hover {
 
     .item_title {
         text-align: center;
-        font-weight: bolder;
         font-size: 64px;
-/*        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;*/
-        /* color: var(--theme-red); */
+     /*   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        color: var(--theme-red); */
     }
 
     .refer_button {
@@ -499,6 +525,11 @@ a:hover {
         transition-duration: 0.4s;
         margin-bottom: 5px;
     }
+
+	#icons_div img:hover {
+		transform: scale(1.2);
+		transition: transform .25s;
+	}
 }
 
 @media (min-width: 600px) {
@@ -529,13 +560,4 @@ a:hover {
         z-index: 0;
         margin-bottom: 10px;
     }
-
-     .info_box:hover{
-        background-color: #cccccc;
-        transition: all .25s;
-        transform: scale(1.1);
-        box-shadow: 0px 0px 50px 0px #333;
-        z-index: 10;
-    }
-
 }
