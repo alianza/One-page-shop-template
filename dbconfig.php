@@ -46,6 +46,8 @@ try {
             $small_desc_2 = $result['small_desc_2'];
             $small_desc_3 = $result['small_desc_3'];
             $small_desc_4 = $result['small_desc_4'];
+            $overview_title = $result['overview_title'];
+            $overview_text = $result['overview_text'];
 
      } catch(PDOException $e) {
 
@@ -71,6 +73,7 @@ try {
             $misc_image_2 = "data:image/jpg;base64," . base64_encode($result['misc_image_2']);
             $misc_image_3 = "data:image/jpg;base64," . base64_encode($result['misc_image_3']);
             $misc_image_4 = "data:image/jpg;base64," . base64_encode($result['misc_image_4']);
+            $overview_image = "data:image/jpg;base64," . base64_encode($result['overview_image']);
 
      } catch(PDOException $e) {
 

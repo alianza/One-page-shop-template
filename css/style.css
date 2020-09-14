@@ -137,12 +137,59 @@ a button.refer_button_secondary:hover {
     left: 0;
     text-align: center;
     padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 #info_div {
     display: inline-block;
     vertical-align: middle;
+}
+
+#overview_div_container {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 1em;
+/*    background-color: var(--theme-red);*/
+}
+
+#overview_div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#overview_div div {
+    margin-top: .4em;
+}
+
+#overview_div div:first-of-type {
+    margin-bottom: 1em;
+}
+
+#overview_div .overview_left {
+    float: left;
+    width: 100%;
+}
+
+.overview_left .overview_image {
+    width: 90%;
+    max-width: 450px;
+}
+
+#overview_div .overview_right {
+    float: left;
+    width: 100%;
+}
+
+.overview_right .overview_text {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    line-height: 2em;
+    font-size: larger;
 }
 
 #icons_div {
@@ -466,10 +513,6 @@ a:hover {
         padding-bottom: 3em;
     }
 
-    #info_div_container {
-        padding-bottom: 2em;
-    }
-
     .info_box {
         display: inline-block;
         width: 300px;
@@ -533,6 +576,14 @@ a:hover {
 }
 
 @media (min-width: 600px) {
+
+    #overview_div div {
+        width: 50% !important;
+    }
+
+    #overview_div div:first-of-type {
+        margin-bottom: 0;
+    }
 
     .link_list_item {
         display: inline;

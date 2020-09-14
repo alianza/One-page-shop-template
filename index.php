@@ -84,13 +84,10 @@
                 <a href="<?php echo($order_button_link); ?>"><button class="refer_button refer_button_primary"><?php echo($order_button); ?></button></a>
                 <a href="#info_div_container"><button class="refer_button refer_button_secondary"><?php echo($refer_button); ?></button></a>
             </div>
-            <div class="v-align-helper"></div>
         </div>
 
         <!--  Information about the 3 main features of product  -->
         <div id="info_div_container">
-            <div class="v-align-helper"></div>
-
             <h2 class="section_title_theme" id="features"><?php echo($small_title_1); ?></h2>
 
             <div id="info_div">
@@ -112,10 +109,22 @@
             </div>
         </div>
 
+        <div id="overview_div_container">
+            <h2 class="section_title_theme" id="overview"><?php echo($overview_title); ?></h2>
+
+            <div id="overview_div">
+
+                <div class="overview_left">
+                        <img class="overview_image" src="<?php echo($overview_image); ?>">
+                    </div>
+                <div class="overview_right">
+                        <p class="overview_text"><?php echo($overview_text); ?></p>
+                    </div>
+            </div>
+        </div>
+
         <!--  Variations  -->
         <div id="products_div_container">
-            <div class="v-align-helper"></div>
-
             <h2 class="section_title_light" id="products"><?php echo($small_title_2); ?></h2>
 
             <div id="products_div">
