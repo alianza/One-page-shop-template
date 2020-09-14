@@ -29,6 +29,17 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115000385-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-115000385-3');
+	</script>
+
     </head>
 
     <!-- Facebook Pixel Code -->
@@ -70,19 +81,29 @@
 <!--  End  Smooth scroll 'Read More'-->
 
 <body>
-
     <div id="page">
         <div class="main_logo">
             <img src="media/logo.png">
         </div>
         <!--  Big video of product with text  -->
         <div id="top_div">
-            <video id="top_div_img" autoplay muted loop src="media/kak1.mp4" width="100%" height="100%"></video>
+            <video id="top_div_img" autoplay playsinline muted loop src="media/kak1.mp4" width="100%" height="100%"></video>
             <div id="item_desc">
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>
                 <a href="<?php echo($order_button_link); ?>"><button class="refer_button refer_button_primary"><?php echo($order_button); ?></button></a>
                 <a href="#info_div_container"><button class="refer_button refer_button_secondary"><?php echo($refer_button); ?></button></a>
+            </div>
+        </div>
+
+        <div id="icons_div">
+            <div id="icons_container">
+                <img src="media/ico_accuracy.jpg">
+                <img src="media/ico_cardio.jpg">
+                <img src="media/ico_learn.jpg">
+                <img src="media/ico_reflex.jpg">
+                <img src="media/ico_speed.jpg">
+                <img src="media/ico_tricks.jpg">
             </div>
         </div>
 
@@ -149,12 +170,17 @@
                 </div>
 
             </div>
-            <a href="<?php echo($order_button_link); ?>"><button class="order_button"><?php echo($order_button); ?></button></a>
+            <a href="<?php echo($order_button_link); ?>"><button id="order_button" class="order_button"><?php echo($order_button); ?></button></a>
         </div>
+
+		<script>
+		document.getElementById('order_button').addEventListener('click', function() {
+				fbq('track', 'Purchase');
+		}, false);
+	</script>
 
         <!--  testimonials  -->
         <div id="testimonials_div">
-
             <div class="testimonials_slider slider">
 
                 <?php
@@ -235,6 +261,8 @@
               ]
             });
         });
+
+		document.getElementById('top_div_img').play();
     </script>
 </body>
 
