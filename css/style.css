@@ -136,7 +136,7 @@ a button.refer_button_secondary:hover {
     bottom: 0;
     left: 0;
     text-align: center;
-    padding-top: 1em;
+    padding: 1em;
 }
 
 #info_div {
@@ -174,19 +174,17 @@ a button.refer_button_secondary:hover {
     width: 100%;
 }
 
-.overview_left .overview_image {
-    width: 90%;
-    max-width: 450px;
+#overview_div .overview_right {
+    float: right;
+    width: 100%;
 }
 
-#overview_div .overview_right {
-    float: left;
-    width: 100%;
+.overview_left .overview_image {
+    width: 90%;
 }
 
 .overview_right .overview_text {
     width: 90%;
-    max-width: 450px;
     margin: 0 auto;
     line-height: 2em;
     font-size: larger;
@@ -223,7 +221,6 @@ a button.refer_button_secondary:hover {
 .section_title_light, .section_title_theme {
     font-size: 32px;
     color: var(--theme-red);
-    padding: 0px 8px;
     margin: 14px 0px 16px 0px;
     font-family: 'Reem Kufi' !important;
 }
@@ -266,8 +263,7 @@ a button.refer_button_secondary:hover {
     left: 0;
     text-align: center;
     background-color: var(--theme-red);
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em;
 }
 
 .products_div_img {
@@ -577,8 +573,12 @@ a:hover {
 
 @media (min-width: 600px) {
 
-    #overview_div div {
-        width: 50% !important;
+    #overview_div .overview_right {
+        width: calc((100%/3) * 2) !important;
+    }
+
+    #overview_div .overview_left {
+        width: calc(100%/3) !important;
     }
 
     #overview_div div:first-of-type {
@@ -604,7 +604,7 @@ a:hover {
 
     .info_box {
         display: inline-block;
-        width: 28%;
+        width: calc(33% - 10px);
         vertical-align: top;
         padding: 5px;
         transition: all .25s;
