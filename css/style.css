@@ -5,6 +5,16 @@
     --theme-red: #c1282d;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: var(--theme-red);
+}
+
+::selection {
+    color: white;
+    background: var(--theme-red);
+}
+
 body {
     font-family: 'Roboto', serif !important;
     line-height: 1.25;
@@ -64,7 +74,7 @@ p, h1, h2, li {
     /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
     word-break: break-word;
     margin-bottom: .5rem;
-    font-family: 'Reem Kufi' !important;
+    font-family: 'Reem Kufi', serif !important;
 }
 
 .refer_button {
@@ -136,12 +146,13 @@ a button.refer_button_secondary:hover {
     bottom: 0;
     left: 0;
     text-align: center;
-    padding: 1em;
+    padding: calc(1em - 5px);
 }
 
 #info_div {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #overview_div_container {
@@ -156,33 +167,73 @@ a button.refer_button_secondary:hover {
 }
 
 #overview_div {
-    display: inline-block;
     vertical-align: middle;
     width: 100%;
-}
-
-#overview_div div {
+    margin-bottom: 1em;
     margin-top: .4em;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
 }
 
 #overview_div .overview_left {
-    float: left;
-    width: 100%;
-}
-
-#overview_div .overview_right {
-    float: right;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1em;
 }
 
 .overview_left .overview_image {
     width: 90%;
 }
 
-.overview_right .overview_text {
+.overview_right .overview_text, .overview_right .overview_details {
     width: 90%;
     margin: 0 auto;
     font-size: larger;
+}
+
+.overview_right .overview_details {
+    border-bottom: 2px solid #333333;
+}
+
+details[open] summary ~ * {
+    animation: sweep .25s ease-in-out;
+}
+
+.overview_right summary {
+    margin: 1em;
+    cursor: pointer;
+    transition: transform 0.25s;
+    font-size: 24px;
+    text-align: left;
+}
+
+.overview_right summary:hover {
+    transform: scale(1.05);
+    transition: all 0.1s;
+}
+
+.overview_right summary:active {
+    opacity: 0.5;
+    transform: scale(1);
+    transition: all 0.1s;
+}
+
+.overview_right summary:focus {
+    outline: none;
+}
+
+/* FAQ Details Animation */
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    /*0%    {opacity: 0; margin-right: -80vw; margin-left: 80vw}*/
+    /*100%  {opacity: 1; margin-right: 0px; margin-left: 0px}*/
+    0%    {opacity: 1; transform: translate(100vw, 0)}
+    100%  {opacity: 1; transform: translate(0, 0)}
 }
 
 #icons_div {
@@ -216,8 +267,8 @@ a button.refer_button_secondary:hover {
 .section_title_light, .section_title_theme {
     font-size: 32px;
     color: var(--theme-red);
-    margin: 14px 0px 16px 0px;
-    font-family: 'Reem Kufi' !important;
+    margin: 14px 0 16px 0;
+    font-family: 'Reem Kufi', serif !important;
 }
 
 .section_title_light::after, .section_title_theme::after {
@@ -248,6 +299,7 @@ a button.refer_button_secondary:hover {
     padding: 5px;
     transition: all .25s;
     z-index: 0;
+    flex-grow: 1;
 }
 
 #products_div_container {
@@ -264,9 +316,7 @@ a button.refer_button_secondary:hover {
 .products_div_img {
     width: 100%;
     height: auto;
-    box-shadow:
-        white 0px 0px 0px 2px,
-        0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: white 0 0 0 2px, 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .product_small_desc {
@@ -277,13 +327,13 @@ a button.refer_button_secondary:hover {
     overflow-x: auto;
     overflow-y: auto;
     word-wrap: break-word;
-    margin-top: 0px;
+    margin-top: 0;
     font-size: large;
     margin-bottom: 10px;
 }
 
 .product_large_desc {
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0 5px 0;
     font-size: larger;
 }
 
@@ -306,7 +356,7 @@ a button.refer_button_secondary:hover {
 .links_list {
     list-style-type: none;
     text-align: center;
-    margin: 2px 0px 15px 0px;
+    margin: 2px 0 15px 0;
 }
 
 .link_list_item {
@@ -445,7 +495,7 @@ a:hover {
     width: 48px;
     height: auto;
     transition: all 0.5s;
-    margin: 0px 25px 0px 25px;
+    margin: 0 25px 0 25px;
 }
 
 .socialmedia_icon:hover {
@@ -511,7 +561,6 @@ a:hover {
         padding: 5px;
         transition: all .25s;
         z-index: 0;
-        margin-bottom: 10px;
     }
 
     .products_box {
@@ -524,7 +573,6 @@ a:hover {
     #item_desc {
         position: absolute;
         text-align: center;
-        top: 100px;
         width: 100%;
         transform: translate(-50%, -50%);
         left: 50%;
@@ -548,9 +596,7 @@ a:hover {
 
     .refer_button {
         font-weight: bold;
-        padding: 1em;
-        padding-left: 2em;
-        padding-right: 2em;
+        padding: 1em 2em;
         text-align: center;
         vertical-align: middle;
         cursor: pointer;
@@ -574,10 +620,18 @@ a:hover {
 
     #overview_div .overview_left {
         width: calc(100%/3) !important;
+        flex-direction: row;
+        margin-bottom: 0;
     }
 
-    #overview_div div:first-of-type {
-        margin-bottom: 1em;
+    #overview_div {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+    }
+
+    #overview_div .overview_left img {
+        width: 100%;
     }
 
     .link_list_item {
@@ -604,6 +658,5 @@ a:hover {
         padding: 5px;
         transition: all .25s;
         z-index: 0;
-        margin-bottom: 10px;
     }
 }
