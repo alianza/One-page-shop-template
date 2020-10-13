@@ -78,7 +78,7 @@
                         <p class="overview_text"><?php echo($overview_text); ?></p>
 
                     <?php
-                    //              Display Testimonials
+                    // Display Details Spoilers
                     while ($row = $stmtSpoil->fetch(PDO::FETCH_ASSOC)) {
                         echo("<details class='overview_details'>
                                   <summary><strong>{$row['summary']}</strong></summary>
@@ -119,7 +119,6 @@
             <a href="<?php echo($order_button_link); ?>"><button id="order_button" class="order_button"><?php echo($order_button); ?></button></a>
         </div>
 
-
         <!--  testimonials  -->
         <div id="testimonials_div">
             <div class="testimonials_slider slider">
@@ -138,7 +137,6 @@
                 ?>
 
             </div>
-
         </div>
         <!--  Footer  -->
         <div class="footer_div">
@@ -167,9 +165,6 @@
             </div>
         </div>
     </div>
-    <script>
-
-    </script>
 </body>
 <script src="js/after.js"></script>
 </html>

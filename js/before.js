@@ -9,14 +9,16 @@ $(document).ready(function(){
 });
     // Details tag animation handler listener
     document.querySelectorAll('details summary').forEach(elem => {
-        elem.addEventListener("click", function() {disableScrollX(elem)});
+        elem.addEventListener("click", function() { animateDetailsTag(elem) });
     })
 
 });
 
-function disableScrollX(elem) {
+function animateDetailsTag(elem) {
     const elemParent = $(elem).parent();
     const elemParentHeight = elemParent.innerHeight();
+    const extraSpacingBecauseOfBorderBottoms = 2;
+    const extra = extraSpacingBecauseOfBorderBottoms;
 
     if (elem.getAttribute('open') == null) {
         document.body.style.overflowX = 'hidden';

@@ -193,20 +193,33 @@ a button.refer_button_secondary:hover {
     font-size: larger;
 }
 
-.overview_right .overview_details {
-    border-bottom: 2px solid #333333;
+details {
+    transition: border-bottom-width 1s;
 }
 
-details[open] summary ~ * {
-    animation: sweep .25s ease-in-out;
+.overview_right .overview_details[open] {
+    border-bottom: 2px solid var(--theme-red);
+}
+
+details[open] summary {
+    border-bottom: 4px solid var(--theme-red);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+details summary::-webkit-details-marker {
+    color: var(--theme-red);
 }
 
 .overview_right summary {
     margin: 1em;
     cursor: pointer;
+    color: var(--theme-red);
     transition: transform 0.25s;
     font-size: 24px;
     text-align: left;
+    display: inline-block;
+    float: left;
 }
 
 .overview_right summary:hover {
@@ -225,6 +238,7 @@ details[open] summary ~ * {
 }
 
 /* FAQ Details Animation */
+
 details[open] summary ~ * {
     animation: sweep .5s ease-in-out;
 }
