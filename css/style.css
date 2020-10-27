@@ -198,13 +198,18 @@ details {
 }
 
 .overview_right .overview_details[open] {
-    border-bottom: 2px solid var(--theme-red);
+    border-bottom: none;
 }
 
 details[open] summary {
     border-bottom: 4px solid var(--theme-red);
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: .5em;
+    transition: border-bottom .5s;
+}
+
+details :not(:first-child) {
+    clear: both;
+    overflow: hidden;
 }
 
 details summary::-webkit-details-marker {
@@ -212,7 +217,8 @@ details summary::-webkit-details-marker {
 }
 
 .overview_right summary {
-    margin: 1em;
+    width: 100%;
+    margin: .5em 0;
     cursor: pointer;
     color: var(--theme-red);
     transition: transform 0.25s;
@@ -631,6 +637,17 @@ a:hover {
     #overview_div .overview_right {
         width: calc((100%/3) * 2) !important;
     }
+
+    .overview_right summary {
+        width: auto;
+        margin: 1em;
+        margin-bottom: 10px;
+    }
+
+    .overview_right .overview_details[open] {
+        border-bottom: 2px solid var(--theme-red);
+    }
+
 
     #overview_div .overview_left {
         width: calc(100%/3) !important;

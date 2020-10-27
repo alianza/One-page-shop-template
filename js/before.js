@@ -16,32 +16,39 @@ $(document).ready(function(){
 
 function animateDetailsTag(elem) {
     const elemParent = $(elem).parent();
-    const elemParentHeight = elemParent.innerHeight();
-    const extraSpacingBecauseOfBorderBottoms = 2;
-    const extra = extraSpacingBecauseOfBorderBottoms;
+    const detailsContent = $(':not(:first-child', elemParent);
 
-    if (elem.getAttribute('open') == null) {
-        document.body.style.overflowX = 'hidden';
+    document.body.style.overflowX = 'hidden';
 
-            setTimeout(() => {
-                elemParent.get(0).animate([
-                    { height: elemParentHeight + "px" },
-                    { height: elemParent.innerHeight() + "px" }
-                ], {
-                    duration: 250,
-                    easing: 'ease-in-out'
+    if (!elemParent.attr('open')) {
+        console.log('open');
+
+        setTimeout(() => {
+
+            const height = detailsContent.height();
+
+            detailsContent.each(function () {
+                $(this).css('height', 0);
+
+                $(this).animate({
+                    height: height + "px"
+                }, 250, function () {
+                    detailsContent.each(function () {
+                        $(this).css('height', 'auto');
+                    });
                 });
-            }, 0);
-    } else {
-        document.body.style.overflowX = 'inherit';
-
-            elemParent.get(0).animate([
-                { height: elemParent.innerHeight() + "px" },
-                { height: elemParentHeight + "px" }
-            ], {
-                duration: 250,
-                easing: 'ease-in',
             });
+        });
+    } else {
+        console.log('close');
+
+        const height = $(elem).outerHeight(true);
+
+        elemParent.animate({
+            height: height + "px"
+        }, 250, function () {
+            elemParent.css('height', 'auto');
+        });
     }
 
     setTimeout(() => {
