@@ -50,7 +50,6 @@ p, h1, h2, li {
 #item_desc {
     position: absolute;
     text-align: center;
-    top: 100px;
     width: 100%;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -79,7 +78,7 @@ p, h1, h2, li {
 
 .refer_button {
     font-weight: bold;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     padding: 1em;
     text-align: center;
     vertical-align: middle;
@@ -119,10 +118,8 @@ a button.refer_button_secondary:hover {
     border: 2px solid white;
     color: #fff;
     font-weight: 700;
-    font-family: Roboto;
-    padding: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
+    font-family: Roboto, serif;
+    padding: 1em 2em;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -146,7 +143,7 @@ a button.refer_button_secondary:hover {
     bottom: 0;
     left: 0;
     text-align: center;
-    padding: calc(1em - 5px);
+    padding: 1em;
 }
 
 #info_div {
@@ -330,7 +327,7 @@ details[open] summary ~ * {
     left: 0;
     text-align: center;
     background-color: var(--theme-red);
-    padding: 1em;
+    padding: 1em 1em 3em;
 }
 
 .products_div_img {
@@ -571,7 +568,15 @@ a:hover {
     }
 
     #products_div_container {
-        padding-bottom: 3em;
+        padding: 1em 2.5em;
+    }
+
+    #overview_div_container {
+        padding: 1em 2.5em;
+    }
+
+    #info_div_container {
+        padding: calc(1em - 5px) 2.5em;
     }
 
     .info_box {
@@ -638,16 +643,26 @@ a:hover {
         width: calc((100%/3) * 2) !important;
     }
 
+    #products_div_container {
+        padding: 1em 5em;
+    }
+
+    #overview_div_container {
+        padding: 1em 5em;
+    }
+
+    #info_div_container {
+        padding: calc(1em - 5px) 5em;
+    }
+
     .overview_right summary {
         width: auto;
-        margin: 1em;
-        margin-bottom: 10px;
+        margin: 1em 1em 10px;
     }
 
     .overview_right .overview_details[open] {
         border-bottom: 2px solid var(--theme-red);
     }
-
 
     #overview_div .overview_left {
         width: calc(100%/3) !important;
