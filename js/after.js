@@ -37,4 +37,4 @@ $(document).ready(function(){
     });
 });
 
-document.getElementById('top_div_img').play();
+document.getElementById('top_img').play();
