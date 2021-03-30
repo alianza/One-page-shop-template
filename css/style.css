@@ -190,7 +190,7 @@ a button.refer_button_secondary:hover {
 }
 
 .overview_right .overview_text, .overview_right .overview_details {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     font-size: larger;
 }
@@ -667,6 +667,10 @@ a:hover {
 
     #overview .overview_left img {
         width: 100%;
+    }
+
+    .overview_right .overview_text, .overview_right .overview_details {
+        width: 90%;
     }
 }
 
