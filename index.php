@@ -22,17 +22,17 @@
             <img src="media/logo.png">
         </div>
         <!--  Big video of product with text  -->
-        <div id="top_div">
-            <video id="top_div_img" autoplay playsinline muted loop src="media/kak1.mp4" width="100%" height="100%"></video>
+        <div id="top">
+            <video id="top_img" autoplay playsinline muted loop src="media/kak1.mp4" width="100%" height="100%"></video>
             <div id="item_desc">
                 <h1 class="item_title"><?php echo($title); ?></h1>
                 <p class="item_desc_text"><?php echo($desc_text); ?></p>
                 <a href="<?php echo($order_button_link); ?>"><button class="refer_button refer_button_primary"><?php echo($order_button); ?></button></a>
-                <a href="#info_div_container"><button class="refer_button refer_button_secondary"><?php echo($refer_button); ?></button></a>
+                <a href="#info_container"><button class="refer_button refer_button_secondary"><?php echo($refer_button); ?></button></a>
             </div>
         </div>
 
-        <div id="icons_div">
+        <div id="icons">
             <div id="icons_container">
                 <img src="media/ico_accuracy.jpg">
                 <img src="media/ico_cardio.jpg">
@@ -44,32 +44,32 @@
         </div>
 
         <!--  Information about the 3 main features of product  -->
-        <div id="info_div_container">
-            <h2 class="section_title_theme" id="features"><?php echo($small_title_1); ?></h2>
+        <div id="info_container">
+            <h2 class="section_title_theme" id="features_title"><?php echo($small_title_1); ?></h2>
 
-            <div id="info_div">
+            <div id="info">
                 <div class="info_box">
-                    <img class="info_div_img" src="<?php echo($feature_image_1); ?>">
+                    <img class="info_img" src="<?php echo($feature_image_1); ?>">
                     <p class="product_large_desc"><?php echo($large_desc_1); ?></p>
                 </div>
 
                 <div class="info_box">
-                    <img class="info_div_img" src="<?php echo($feature_image_2); ?>">
+                    <img class="info_img" src="<?php echo($feature_image_2); ?>">
                     <p class="product_large_desc"><?php echo($large_desc_2); ?></p>
                 </div>
 
                 <div class="info_box">
-                    <img class="info_div_img" src="<?php echo($feature_image_3); ?>">
+                    <img class="info_img" src="<?php echo($feature_image_3); ?>">
                     <p class="product_large_desc"><?php echo($large_desc_3); ?></p>
                 </div>
 
             </div>
         </div>
 
-        <div id="overview_div_container">
-            <h2 class="section_title_theme" id="overview"><?php echo($overview_title); ?></h2>
+        <div id="overview_container">
+            <h2 class="section_title_theme" id="overview_title"><?php echo($overview_title); ?></h2>
 
-            <div id="overview_div">
+            <div id="overview">
 
                 <div class="overview_left">
                         <img class="overview_image" src="<?php echo($overview_image); ?>">
@@ -91,27 +91,27 @@
         </div>
 
         <!--  Variations  -->
-        <div id="products_div_container">
-            <h2 class="section_title_light" id="products"><?php echo($small_title_2); ?></h2>
+        <div id="products_container">
+            <h2 class="section_title_light" id="products_title"><?php echo($small_title_2); ?></h2>
 
-            <div id="products_div">
+            <div id="products">
                 <div id="product_box1" class="products_box">
-                    <img class="products_div_img" src="<?php echo($misc_image_1); ?>">
+                    <img class="products_img" src="<?php echo($misc_image_1); ?>">
                     <p class="product_small_desc"><?php echo($small_desc_1); ?></p>
                 </div>
 
                 <div id="products_box2" class="products_box">
-                    <img class="products_div_img" src="<?php echo($misc_image_2); ?>">
+                    <img class="products_img" src="<?php echo($misc_image_2); ?>">
                     <p class="product_small_desc"><?php echo($small_desc_2); ?></p>
                 </div>
 
                 <div id="products_box3" class="products_box">
-                    <img class="products_div_img" src="<?php echo($misc_image_3); ?>">
+                    <img class="products_img" src="<?php echo($misc_image_3); ?>">
                     <p class="product_small_desc"><?php echo($small_desc_3); ?></p>
                 </div>
 
                 <div id="products_box4" class="products_box">
-                    <img class="products_div_img" src="<?php echo($misc_image_4); ?>">
+                    <img class="products_img" src="<?php echo($misc_image_4); ?>">
                     <p class="product_small_desc"><?php echo($small_desc_4); ?></p>
                 </div>
 
@@ -120,7 +120,7 @@
         </div>
 
         <!--  testimonials  -->
-        <div id="testimonials_div">
+        <div id="testimonials">
             <div class="testimonials_slider slider">
 
                 <?php
@@ -139,7 +139,7 @@
             </div>
         </div>
         <!--  Footer  -->
-        <div class="footer_div">
+        <div class="footer">
             <div id='footer_company'>
                 <ul class="links_list">
                     <li class="link_list_item"><a class="link" href="<?php echo($more_products_link); ?>">MORE PRODUCTS</a></li>
@@ -153,10 +153,10 @@
                 <img src="media/payment_methods.png">
             </div>
 
-            <div id='socialmedia_div'>
-                <a href="<?php echo($social_link_1); ?>"><img class="socialmedia_icon" src="<?php echo($social_image_1); ?>"></a>
-                <a href="<?php echo($social_link_2); ?>"><img class="socialmedia_icon" src="<?php echo($social_image_2); ?>"></a>
-                <a href="<?php echo($social_link_3); ?>"><img class="socialmedia_icon" src="<?php echo($social_image_3); ?>"></a>
+            <div id='social_media'>
+                <a href="<?php echo($social_link_1); ?>"><img class="social_media_icon" src="<?php echo($social_image_1); ?>"></a>
+                <a href="<?php echo($social_link_2); ?>"><img class="social_media_icon" src="<?php echo($social_image_2); ?>"></a>
+                <a href="<?php echo($social_link_3); ?>"><img class="social_media_icon" src="<?php echo($social_image_3); ?>"></a>
             </div>
 
             <div class="official_container">

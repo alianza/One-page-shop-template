@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    document.querySelectorAll('a[href^="#products_div_container"], a[href^="#info_div_container"]').forEach(anchor => {anchor.addEventListener('click', function (e) {
+    document.querySelectorAll('a[href^="#products_container"], a[href^="#info_container"]').forEach(anchor => {anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -21,8 +21,6 @@ function animateDetailsTag(elem) {
     document.body.style.overflowX = 'hidden';
 
     if (!elemParent.attr('open')) {
-        console.log('open');
-
         setTimeout(() => {
 
             const height = detailsContent.height();
@@ -40,8 +38,6 @@ function animateDetailsTag(elem) {
             });
         });
     } else {
-        console.log('close');
-
         const height = $(elem).outerHeight(true);
 
         elemParent.animate({
